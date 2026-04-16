@@ -1,179 +1,111 @@
-#!/usr/bin/env
- python3
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-每日电商资讯抓取与推送脚本
-支持：钉钉、企业微信、飞书 Webhook
-"""
 
 import os
+import sys
 import json
-import hmac
-import hashlib
-import base64
-import urllib.parse
-import time
-from datetime import datetime
 import requests
+from datetime import datetime
 from bs4 import BeautifulSoup
 
-# ============ 配置区域 ============
-
-# 资讯源配置
 NEWS_SOURCES = [
-    {
-        "name": "亿邦动力",
-        "url": "https:/
-/www.ebrun.com/newest/
-",
-        "selector": ".article-item h3 a",  # 需要根据实际页面调整
-        "base_url": "https://www.ebrun.com"
-    },
-    {
-        "name": "36氪",
-        "url": "https:/
-/36kr.com/search/articles/电商
-",
-        "selector": ".article-item-title a",
-        "base_url": "https://36kr.com"
-    }
+    {"name": "亿邦动力", "url": "https://www.ebrun.com/newest/", "selector": ".article-item h3 a, .article-list li a, article h3 a", "limit": 5},
+    {"name": "36氪", "url": "https://36kr.com/search/articles/电商", "selector": ".article-item-title a, .kr-news-content a", "limit": 5},
+    {"name": "派代网", "url": "https://www.paidai.com", "selector": ".article-title a, h2 a, .post-title a", "limit": 3}
 ]
 
-# 推送配置
-MAX_NEWS_COUNT = 8  # 每天推送最多8条
+MAX_NEWS_COUNT = 8
+DINGTALK_WEBHOOK = os.getenv("DINGTALK_WEBHOOK", "")
+DINGTALK_SECRET = os.getenv("DINGTALK_SECRET", "")
 
-# ============ Webhook 工具函数 ============
+def get_timestamp():
+    return str(int(datetime.now().timestamp() * 1000))
 
-def get_dingtalk_sign(timestamp, secret):
-    """生成钉钉签名"""
-    secret_enc = secret.encode('utf-8')
-    string_to_sign = f'{timestamp}\n{secret}'
-    string_to_sign_enc = string_to_sign.encode('utf-8')
-    hmac_code = hmac.new(secret_enc, string_to_sign_enc, digestmod=hashlib.sha256).digest()
+def get_dingtalk_url():
+    if not DINGTALK_SECRET:
+        return DINGTALK_WEBHOOK
+    import hashlib, hmac, base64, urllib.parse
+    secret = DINGTALK_SECRET
+    timestamp = get_timestamp()
+    hmac_code = hmac.new(secret.encode('utf-8'), f'{timestamp}\n{secret}'.encode('utf-8'), digestmod=hashlib.sha256).digest()
     sign = urllib.parse.quote_plus(base64.b64encode(hmac_code))
-    return sign
+    return f"{DINGTALK_WEBHOOK}&timestamp={timestamp}&sign={sign}"
 
-def send_dingtalk(webhook, secret, title, content, items):
-    """发送钉钉消息"""
-    timestamp = str(round(time.time() * 1000))
-    
-    # 构造签名
-    if secret:
-        sign = get_dingtalk_sign(timestamp, secret)
-        webhook = f"{webhook}&timestamp={timestamp}&sign={sign}"
-    
-    # 构造 Markdown 消息
-    news_list = "\n\n".join([
-        f"**{i+1}. {item['title']}**\n"
-        f"📰 {item['source']} | 🔗 [查看原文]({item['url']})"
-        for i, item in enumerate(items)
-    ])
-    
-    message = {
-        "msgtype": "markdown",
-        "markdown": {
-            "title": title,
-            "text": f"""## 📰 {title}
+def fetch_news_from_source(source):
+    news_list = []
+    try:
+        headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36', 'Accept-Language': 'zh-CN,zh;q=0.9'}
+        response = requests.get(source["url"], headers=headers, timeout=15)
+        response.raise_for_status()
+        response.encoding = 'utf-8'
+        soup = BeautifulSoup(response.text, 'html.parser')
+        selectors = source["selector"].split(",")
+        for selector in selectors:
+            elements = soup.select(selector.strip())
+            for elem in elements[:source["limit"]]:
+                href = elem.get("href", "")
+                title = elem.get_text(strip=True)
+                if href and title and len(title) > 5:
+                    if href.startswith("/"):
+                        from urllib.parse import urljoin
+                        href = urljoin("/".join(source["url"].split("/")[:3]), href)
+                    news_list.append({"title": title, "url": href})
+            if news_list:
+                break
+    except Exception as e:
+        print(f"抓取 {source['name']} 失败: {e}")
+    return news_list[:source["limit"]]
 
-{content}
-
----
-
-{news_list}
-
----
-⏰ 更新时间：{datetime.now().strftime('%Y-%m-%d %H:%M')}"""
-        }
-    }
-    
-    response = requests.post(webhook, json=message, headers={"Content-Type": "application/json"})
-    print(f"钉钉推送结果: {response.status_code} - {response.text}")
-    return response.status_code == 200
-
-# ============ 资讯抓取函数 ============
-
-def fetch_news():
-    """抓取电商资讯"""
+def fetch_all_news():
     all_news = []
-    
+    seen_titles = set()
+    print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M')}] 开始抓取电商资讯...")
     for source in NEWS_SOURCES:
-        try:
-            print(f"正在抓取: {source['name']}")
-            headers = {
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.0'
-            }
-            response = requests.get(source['url'], headers=headers, timeout=10)
-            soup = BeautifulSoup(response.text, 'html.parser')
-            
-            # 抓取文章标题和链接
-            links = soup.select(source['selector'])[:5]  # 每个源取前5条
-            
-            for link in links:
-                title = link.get_text(strip=True)
-                href = link.get('href', '')
-                
-                # 处理相对链接
-                if href.startswith('/'):
-                    href = source['base_url'] + href
-                elif not href.startswith('http'):
-                    href = source['base_url'] + '/' + href
-                
-                if title and href and len(title) > 10:
-                    all_news.append({
-                        'title': title,
-                        'url': href,
-                        'source': source['name']
-                    })
-                    
-        except Exception as e:
-            print(f"抓取 {source['name']} 失败: {e}")
-    
-    # 去重并限制数量
-    seen = set()
-    unique_news = []
-    for item in all_news:
-        if item['title'] not in seen:
-            seen.add(item['title'])
-            unique_news.append(item)
-    
-    return unique_news[:MAX_NEWS_COUNT]
+        news_list = fetch_news_from_source(source)
+        for news in news_list:
+            title_key = news["title"][:20].lower()
+            if title_key not in seen_titles:
+                seen_titles.add(title_key)
+                news["source"] = source["name"]
+                all_news.append(news)
+        print(f"  - {source['name']}: 获取 {len(news_list)} 条")
+    return all_news[:MAX_NEWS_COUNT]
 
-# ============ 主函数 ============
+def format_dingtalk_message(news_list):
+    today = datetime.now().strftime("%Y年%m月%d日")
+    current_time = datetime.now().strftime("%H:%M")
+    if not news_list:
+        content = f"## 电商资讯早报 | {today}\n\n今日暂无精选资讯\n\n---\n抓取时间：{current_time}"
+    else:
+        items = "\n\n".join([f"**{i}. {n['title']}**\n来源：{n['source']} | [查看原文]({n['url']})" for i, n in enumerate(news_list, 1)])
+        content = f"## 电商资讯早报 | {today}\n\n今日精选 {len(news_list)} 条电商行业最新动态\n\n---\n\n{items}\n\n---\n抓取时间：{current_time}\n由 AI 自动抓取推送"
+    return {"msgtype": "markdown", "markdown": {"title": f"电商资讯早报 | {today}", "text": content}}
+
+def send_to_dingtalk(message):
+    if not DINGTALK_WEBHOOK:
+        print("未配置钉钉Webhook，跳过发送")
+        return True
+    try:
+        response = requests.post(get_dingtalk_url(), headers={"Content-Type": "application/json"}, data=json.dumps(message), timeout=10)
+        result = response.json()
+        if result.get("errcode") == 0:
+            print("钉钉消息发送成功!")
+            return True
+        print(f"钉钉消息发送失败: {result.get('errmsg')}")
+        return False
+    except Exception as e:
+        print(f"发送异常: {e}")
+        return False
 
 def main():
     print("=" * 50)
-    print("开始执行每日电商资讯推送")
+    print("电商资讯早报抓取与推送系统")
     print("=" * 50)
-    
-    # 获取环境变量
-    webhook = os.environ.get('DINGTALK_WEBHOOK')
-    secret = os.environ.get('DINGTALK_SECRET')
-    
-    if not webhook:
-        print("错误: 未设置 DINGTALK_WEBHOOK 环境变量")
-        return False
-    
-    # 抓取资讯
-    news_items = fetch_news()
-    print(f"共抓取到 {len(news_items)} 条资讯")
-    
-    if not news_items:
-        print("没有抓取到资讯，跳过推送")
-        return False
-    
-    # 发送推送
-    today = datetime.now().strftime('%m月%d日')
-    title = f"电商资讯早报 | {today}"
-    content = "今日精选电商行业最新动态，助力经营决策"
-    
-    success = send_dingtalk(webhook, secret, title, content, news_items)
-    
-    if success:
-        print("✅ 推送成功！")
-    else:
-        print("❌ 推送失败")
-    
-    return success
+    news_list = fetch_all_news()
+    print(f"\n共抓取 {len(news_list)} 条资讯")
+    if news_list:
+        send_to_dingtalk(format_dingtalk_message(news_list))
+    return 0
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())
