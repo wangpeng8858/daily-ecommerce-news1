@@ -2,9 +2,8 @@ name: Daily E-commerce News Push
 
 on:
   schedule:
-    # 北京时间每天 9:00 = UTC 1:00
-    - cron: '0 1 * * *'
-  # 手动触发（测试用）
+    # 每天 UTC 0:50 = 北京时间 8:50
+    - cron: '50 0 * * *'
   workflow_dispatch:
 
 jobs:
@@ -28,5 +27,4 @@ jobs:
         env:
           DINGTALK_WEBHOOK: ${{ secrets.DINGTALK_WEBHOOK }}
           DINGTALK_SECRET: ${{ secrets.DINGTALK_SECRET }}
-        run: |
-          python scripts/fetch_news.py
+        run: python scripts/fetch_news.py
