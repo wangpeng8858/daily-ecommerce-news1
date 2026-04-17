@@ -11,7 +11,7 @@ permissions:
   contents: write
 
 jobs:
-  fetch-and-push:
+  fetch-and-push
   push-news:
     runs-on: ubuntu-latest
     
