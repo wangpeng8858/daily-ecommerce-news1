@@ -1,3 +1,4 @@
+
 name: Daily E-commerce News Push
 
 on:
@@ -6,7 +7,8 @@ on:
     - cron: '50 0 * * *'
   workflow_dispatch:
 
-permissions: contents: write
+permissions: 
+  contents: write
 
 jobs:
   fetch-and-push:
