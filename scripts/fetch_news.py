@@ -29,10 +29,10 @@ NEWS_SOURCES = [
         "limit": 5,
     },
     {
-        "name": "钛媒体-电商",
-        "url": "https://www.tmtpost.com/tag/28871",
-        "selectors": [".title a", ".content_title a", "h3 a", ".index_title a"],
-        "url_prefix": "https://www.tmtpost.com",
+        "name": "雨果网-跨境",
+        "url": "https://www.cifnews.com/news",
+        "selectors": ["h3 a", ".news-title a", ".article-title a", ".list-title a"],
+        "url_prefix": "https://www.cifnews.com",
         "limit": 4,
     },
 ]
