@@ -102,89 +102,73 @@ MEMORY_FILE = "data/pushed_topics.md"
 # 历史去重模块
 # ============================================================
 
-def load_pushed_tags(memory_content):
-    """从历史记忆中提取近7天已推送的标签"""
+def load_pushed_tags_from_local():
+    """从本地 data/pushed_topics.md 读取已推送标签"""
     pushed = set()
-    if not memory_content:
+    filepath = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), MEMORY_FILE)
+    if not os.path.exists(filepath):
         return pushed
 
     today = datetime.now()
-    for line in memory_content.split("\n"):
-        line = line.strip()
-        if line.startswith("## ") and "/" in line:
-            try:
-                date_str = line.replace("## ", "").strip()
-                push_date = datetime.strptime(date_str, "%Y-%m-%d")
-                if (today - push_date).days <= 7:
-                    # 提取该日期下的 tags
-            except ValueError:
+    in_recent = False
+    current_tags = []
+
+    with open(filepath, "r", encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if line.startswith("## "):
+                try:
+                    date_str = line.replace("## ", "").strip()
+                    push_date = datetime.strptime(date_str, "%Y-%m-%d")
+                    in_recent = (today - push_date).days <= 7
+                except ValueError:
+                    in_recent = False
                 continue
-        if line.startswith("- tags:"):
-            tags_str = line.replace("- tags:", "").strip().strip("[]")
-            tags = [t.strip().strip("'\"") for t in tags_str.split(",")]
-            pushed.update(t.lower() for t in tags if t.strip())
+            if in_recent and line.startswith("- tags:"):
+                tags_str = line.replace("- tags:", "").strip().strip("[]")
+                tags = [t.strip().strip("'\"") for t in tags_str.split(",")]
+                pushed.update(t.lower() for t in tags if t.strip())
 
     return pushed
 
 
-def format_memory_entry(news_list):
-    """将本次推送的资讯格式化为记忆条目"""
-    today = datetime.now().strftime("%Y-%m-%d")
-    lines = [f"## {today}", ""]
-    for item in news_list:
-        title = item.get("title", "")
-        categories = item.get("categories", [])
-        tags = item.get("tags", [])
-        lines.append(f"- title: {title}")
-        lines.append(f"  categories: {categories}")
-        lines.append(f"  tags: [{', '.join(tags)}]")
-        lines.append(f"  url: {item.get('url', '')}")
-        lines.append("")
-    return "\n".join(lines)
+def load_memory_content_local():
+    """读取完整的 memory 文件内容"""
+    filepath = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), MEMORY_FILE)
+    if os.path.exists(filepath):
+        with open(filepath, "r", encoding="utf-8") as f:
+            return f.read()
+    return ""
 
 
-def get_full_memory_url(base_sha):
-    """获取 memory 文件的最新 SHA"""
+def save_memory_local(memory_content):
+    """保存 memory 到本地文件（checkout 目录中）"""
+    filepath = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), MEMORY_FILE)
+    os.makedirs(os.path.dirname(filepath), exist_ok=True)
+    with open(filepath, "w", encoding="utf-8") as f:
+        f.write(memory_content)
+
+
+def git_commit_and_push():
+    """通过 git 命令提交并推送 memory 文件变更"""
+    import subprocess
     try:
-        token = os.environ.get("GITHUB_TOKEN", "")
-        headers = {"Authorization": f"Bearer {token}", "User-Agent": "Python"}
-        url = f"https://api.github.com/repos/wangpeng8858/daily-ecommerce-news1/contents/{MEMORY_FILE}"
-        resp = requests.get(url, headers=headers, timeout=10)
-        if resp.status_code == 200:
-            return resp.json().get("sha", ""), resp.json().get("content", ""), resp.json().get("encoding", "utf-8")
-    except Exception:
-        pass
-    return "", "", ""
-
-
-def save_memory_to_repo(memory_content, sha):
-    """通过 GitHub API 更新 memory 文件"""
-    import base64
-    token = os.environ.get("GITHUB_TOKEN", "")
-    if not token:
-        print("[WARN] 无 GITHUB_TOKEN，跳过保存历史记忆")
-        return
-
-    import urllib.request
-
-    b64 = base64.b64encode(memory_content.encode("utf-8")).decode()
-    data = json.dumps({
-        "message": f"docs: update pushed topics {datetime.now().strftime('%Y-%m-%d')}",
-        "content": b64,
-        "sha": sha,
-    }).encode("utf-8")
-
-    url = f"https://api.github.com/repos/wangpeng8858/daily-ecommerce-news1/contents/{MEMORY_FILE}"
-    req = urllib.request.Request(url, data=data, method="PUT")
-    req.add_header("Authorization", f"Bearer {token}")
-    req.add_header("User-Agent", "Python")
-    req.add_header("Content-Type", "application/json")
-
-    try:
-        resp = urllib.request.urlopen(req)
-        print(f"[OK] 历史记忆已保存 (HTTP {resp.status})")
-    except Exception as e:
-        print(f"[ERROR] 保存历史记忆失败: {e}")
+        # Actions 环境中自带 git，且已配置好 token
+        repo_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        subprocess.run(["git", "-C", repo_dir, "config", "user.name", "github-actions[bot]"], check=True, capture_output=True)
+        subprocess.run(["git", "-C", repo_dir, "config", "user.email", "github-actions[bot]@users.noreply.github.com"], check=True, capture_output=True)
+        subprocess.run(["git", "-C", repo_dir, "add", MEMORY_FILE], check=True, capture_output=True)
+        result = subprocess.run(["git", "-C", repo_dir, "diff", "--cached", "--quiet"], capture_output=True)
+        if result.returncode == 0:
+            print("[INFO] memory 文件无变更，跳过提交")
+            return
+        subprocess.run(["git", "-C", repo_dir, "commit", "-m", f"docs: update pushed topics {datetime.now().strftime('%Y-%m-%d')}"], check=True, capture_output=True)
+        subprocess.run(["git", "-C", repo_dir, "push"], check=True, capture_output=True)
+        print("[OK] 历史记忆已提交并推送到仓库")
+    except subprocess.CalledProcessError as e:
+        print(f"[WARN] git 操作失败: {e}")
+        if e.stderr:
+            print(f"  stderr: {e.stderr.decode('utf-8', errors='replace')[:200]}")
 
 
 # ============================================================
@@ -539,16 +523,13 @@ def main():
 
     # Step 0: 读取历史记忆
     print("\n[Step 0] 读取历史推送记录...")
-    memory_sha, memory_b64, memory_enc = get_full_memory_url("")
-    memory_content = ""
-    if memory_b64:
-        import base64
-        memory_content = base64.b64decode(memory_b64).decode("utf-8")
-        print(f"  已加载历史记忆 (SHA: {memory_sha[:8]}...)")
+    memory_content = load_memory_content_local()
+    if memory_content:
+        print("  已加载本地历史记忆文件")
     else:
         print("  无历史记忆文件，首次运行")
 
-    pushed_tags = load_pushed_tags(memory_content)
+    pushed_tags = load_pushed_tags_from_local()
     print(f"  近7天已推送标签: {len(pushed_tags)} 个")
 
     # Step 1: 抓取今日资讯
@@ -585,8 +566,9 @@ def main():
         if memory_content:
             updated_memory = new_entry + "\n---\n\n" + memory_content
         else:
-            updated_memory = new_entry + "\n"
-        save_memory_to_repo(updated_memory, memory_sha)
+            updated_memory = "# 电商资讯推送历史记录\n\n" + new_entry + "\n"
+        save_memory_local(updated_memory)
+        git_commit_and_push()
     else:
         print("\n[INFO] 今日无新资讯可推送（全部重复或无内容）")
 
