@@ -38,10 +38,18 @@ NEWS_SOURCES = [
     {
         "name": "雨果网",
         "url": "https://www.cifnews.com/news",
-        "selectors": ["h3 a", ".news-title a", ".article-title a", ".list-title a"],
+        "selectors": ["h3 a", ".news-title a", ".article-title a", ".list-title a", "a.title"],
         "url_prefix": "https://www.cifnews.com",
         "limit": 15,
         "categories": ["跨境电商"],
+    },
+    {
+        "name": "36氪电商",
+        "url": "https://36kr.com/information/e-commerce/",
+        "selectors": ["a.article-item-title", ".article-item-title a", "h3 a"],
+        "url_prefix": "https://36kr.com",
+        "limit": 10,
+        "categories": ["传统电商", "AI 技术", "规则与政策"],
     },
 ]
 
@@ -329,6 +337,21 @@ def check_duplicate(tags, pushed_tags):
         return False
     match_count = sum(1 for t in tags if t.lower() in pushed_tags)
     return match_count >= 3
+
+
+def format_memory_entry(news_list):
+    """生成今日推送记录的 Markdown 条目"""
+    today = datetime.now().strftime("%Y-%m-%d")
+    lines = [f"## {today}", ""]
+    for item in news_list:
+        tags_str = ", ".join(f"'{t}'" for t in item.get("tags", []))
+        cats_str = ", ".join(item.get("categories", []))
+        lines.append(f"- {item['title']}")
+        lines.append(f"  - tags: [{tags_str}]")
+        lines.append(f"  - cats: [{cats_str}]")
+        lines.append(f"  - url: {item['url']}")
+        lines.append("")
+    return "\n".join(lines)
 
 
 # ============================================================
