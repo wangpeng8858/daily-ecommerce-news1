@@ -1,3 +1,122 @@
+## 2026-04-18
+
+- DeepSeek被曝首次寻求外部融资 估值超100亿美元
+  - tags: ['DeepSeek', '被曝首次寻求外部融资', '估值超', '亿美元']
+  - cats: [规则与政策, 传统电商, 跨境电商, 电商财税]
+  - url: https://www.ebrun.com/ebrungo/zb/656548.shtml
+
+- 阿里国际站在印尼推出贸易保障服务
+  - tags: ['阿里国际站在印尼推出贸易保障服务']
+  - cats: [组织架构与人事, 淘系平台]
+  - url: https://www.ebrun.com/ebrungo/zb/656492.shtml
+
+- Shopee菲律宾本土店商品须完整标注保固信息
+  - tags: ['Shopee', '菲律宾本土店商品须完整标注保固信息']
+  - cats: [跨境电商]
+  - url: https://www.ebrun.com/ebrungo/zb/656491.shtml
+
+- 敦煌网发布足球服限价新规 4月20日起执行
+  - tags: ['敦煌网发布足球服限价新规', '日起执行']
+  - cats: [规则与政策]
+  - url: https://www.ebrun.com/ebrungo/zb/656490.shtml
+
+- 加拿大贸易部长访问中国 与电动车企业洽谈市场准入
+  - tags: ['加拿大贸易部长访问中国', '与电动车企业洽谈市场准入']
+  - cats: [规则与政策]
+  - url: https://www.ebrun.com/ebrungo/zb/656487.shtml
+
+- 敦煌网启动2026世界杯全周期促销及双重招商活动
+  - tags: ['敦煌网启动', '世界杯全周期促销及双重招商活动']
+  - cats: [规则与政策, 传统电商, 跨境电商, 电商财税]
+  - url: https://www.ebrun.com/ebrungo/zb/656486.shtml
+
+- 雷军迎来高光时刻
+  - tags: ['雷军迎来高光时刻']
+  - cats: [内容电商, 传统电商, 规则与政策]
+  - url: https://www.dsb.cn/p/01kpf25prq77ykmdp9q4jcccr6
+
+- 俞敏洪要给董宇辉上一课
+  - tags: ['俞敏洪要给董宇辉上一课']
+  - cats: [内容电商, 传统电商, 规则与政策]
+  - url: https://www.dsb.cn/p/01kpf1t5m5b51j8sfqn2yzrkr3
+
+- 多家跨境公司暴雷，被曝逃税11亿
+  - tags: ['多家跨境公司暴雷', '被曝逃税']
+  - cats: [跨境电商, 电商财税]
+  - url: https://www.dsb.cn/p/01kpdf8smb89dej0hkaj2pkga6
+
+- 突发，亚马逊大动作，2.5亿欧元砸向法国
+  - tags: ['突发', '亚马逊大动作', '亿欧元砸向法国']
+  - cats: [跨境电商]
+  - url: https://www.dsb.cn/p/01kpdfa3t1zv1pgdder2j7j7ph
+
+- 贵州茅台利润暴跌，痛失“股王”之位
+  - tags: ['贵州茅台利润暴跌', '痛失', '股王', '之位']
+  - cats: [内容电商, 传统电商, 规则与政策]
+  - url: https://www.dsb.cn/p/01kpdes9wevk512rhd7srtxf1c
+
+- 阿里巴巴单日市值增超1300亿港元
+  - tags: ['阿里巴巴单日市值增超', '亿港元']
+  - cats: [组织架构与人事, 淘系平台]
+  - url: https://www.dsb.cn/p/01kpas9xk8qvhrcja0knbnrb13
+
+- 阿里进军巴基斯坦金融市场
+  - tags: ['阿里进军巴基斯坦金融市场']
+  - cats: [组织架构与人事, 淘系平台]
+  - url: https://www.dsb.cn/p/01kpa0jhkb9jsfxq0n20b3h2v2
+
+- 携程与商务部中国国际电子商务中心达成合作共识
+  - tags: ['携程与商务部中国国际电子商务中心达成合作共识']
+  - cats: [规则与政策]
+  - url: https://www.dsb.cn/p/01kpf9hkc8245vjpvj6wky4z17
+
+- 找钢网新疆分站正式开业
+  - tags: ['找钢网新疆分站正式开业']
+  - cats: [内容电商, 传统电商, 规则与政策]
+  - url: https://www.dsb.cn/p/01kpf8fd573yempkan74dj3sp5
+
+- 京东产发英国维甘项目交割
+  - tags: ['京东产发英国维甘项目交割']
+  - cats: [组织架构与人事, 传统电商]
+  - url: https://www.dsb.cn/p/01kpf7jj2zcwjwevp77ew32jsw
+
+- 小米人事任命：胡峥楠任汽车部CTO，宋钢任参谋长
+  - tags: ['小米人事任命', '胡峥楠任汽车部', 'CTO', '宋钢任参谋长']
+  - cats: [组织架构与人事]
+  - url: https://www.dsb.cn/p/01kpf6868awg6k274q8qyhm57y
+
+- 顺丰、申通、韵达、圆通发布2026年3月业绩
+  - tags: ['顺丰', '申通', '韵达', '圆通发布', '月业绩']
+  - cats: [内容电商, 传统电商, 规则与政策]
+  - url: https://www.dsb.cn/p/01kpf4pdcwzb2cb8zg7ryeh9zp
+
+- 新东方文旅与重庆长航达成战略合作 聚焦长江文旅
+  - tags: ['新东方文旅与重庆长航达成战略合作', '聚焦长江文旅']
+  - cats: [内容电商, 传统电商, 规则与政策]
+  - url: https://www.dsb.cn/p/01kpf35kjpz79jrha2n6vq6gy6
+
+- 一年卖出1800万个摄像头，杭州大卖登顶全球Top1
+  - tags: ['一年卖出', '万个摄像头', '杭州大卖登顶全球', 'Top']
+  - cats: [内容电商, 传统电商, 规则与政策]
+  - url: https://www.dsb.cn/p/01kpdfpsp3nkw4jmhbhz7x312w
+
+- 京东影像大赛“出游限定季”邀你来拍 投稿有机会领999元焕新基金
+  - tags: ['京东影像大赛', '出游限定季', '邀你来拍', '投稿有机会领', '元焕新基金']
+  - cats: [组织架构与人事, 传统电商]
+  - url: https://www.dsb.cn/p/01kpdtc2ej0w6qj3fwjbh4h70a
+
+- 全球出货量超1100万台，追觅扫地机以第一增速领跑市场！
+  - tags: ['全球出货量超', '万台', '追觅扫地机以第一增速领跑市场']
+  - cats: [内容电商, 传统电商, 规则与政策]
+  - url: https://www.dsb.cn/p/01kpdt9hw3swzrayvt5qhmrnjk
+
+- 京东第二款“国民好车”深蓝L06增程版正式下线
+  - tags: ['京东第二款', '国民好车', '深蓝', '增程版正式下线']
+  - cats: [组织架构与人事, 传统电商]
+  - url: https://www.dsb.cn/p/01kpdcyhc6ffx9yxg37c0p7b65
+
+---
+
 # 电商资讯推送历史记录
 
 ## 2026-04-17
