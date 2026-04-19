@@ -1,3 +1,122 @@
+## 2026-04-19
+
+- 阿里国际站在印尼推出贸易保障服务
+  - tags: ['阿里国际站在印尼推出贸易保障服务']
+  - cats: [组织架构与人事, 淘系平台]
+  - url: https://www.ebrun.com/ebrungo/zb/656492.shtml
+
+- Shopee菲律宾本土店商品须完整标注保固信息
+  - tags: ['Shopee', '菲律宾本土店商品须完整标注保固信息']
+  - cats: [跨境电商]
+  - url: https://www.ebrun.com/ebrungo/zb/656491.shtml
+
+- 敦煌网发布足球服限价新规 4月20日起执行
+  - tags: ['敦煌网发布足球服限价新规', '日起执行']
+  - cats: [规则与政策]
+  - url: https://www.ebrun.com/ebrungo/zb/656490.shtml
+
+- 加拿大贸易部长访问中国 与电动车企业洽谈市场准入
+  - tags: ['加拿大贸易部长访问中国', '与电动车企业洽谈市场准入']
+  - cats: [规则与政策]
+  - url: https://www.ebrun.com/ebrungo/zb/656487.shtml
+
+- 敦煌网启动2026世界杯全周期促销及双重招商活动
+  - tags: ['敦煌网启动', '世界杯全周期促销及双重招商活动']
+  - cats: [规则与政策, 传统电商, 跨境电商, 电商财税]
+  - url: https://www.ebrun.com/ebrungo/zb/656486.shtml
+
+- 雷军迎来高光时刻
+  - tags: ['雷军迎来高光时刻']
+  - cats: [内容电商, 传统电商, 规则与政策]
+  - url: https://www.dsb.cn/p/01kpf25prq77ykmdp9q4jcccr6
+
+- 俞敏洪要给董宇辉上一课
+  - tags: ['俞敏洪要给董宇辉上一课']
+  - cats: [内容电商, 传统电商, 规则与政策]
+  - url: https://www.dsb.cn/p/01kpf1t5m5b51j8sfqn2yzrkr3
+
+- 多家跨境公司暴雷，被曝逃税11亿
+  - tags: ['多家跨境公司暴雷', '被曝逃税']
+  - cats: [跨境电商, 电商财税]
+  - url: https://www.dsb.cn/p/01kpdf8smb89dej0hkaj2pkga6
+
+- 阿里官宣首款具身机器人“高德途途”
+  - tags: ['阿里官宣首款具身机器人', '高德途途']
+  - cats: [组织架构与人事, 淘系平台]
+  - url: https://www.dsb.cn/p/01kpfxqngjkwkrzgmxfx4xs2c6
+
+- 抖音2026财经内容报告发布
+  - tags: ['抖音', '财经内容报告发布']
+  - cats: [内容电商]
+  - url: https://www.dsb.cn/p/01kpfrq633mc5h17d4hd1k8tfx
+
+- 名创优品成立AI创新部
+  - tags: ['名创优品成立', 'AI', '创新部']
+  - cats: [AI 技术]
+  - url: https://www.dsb.cn/p/01kpfr9dw696h738t6rvctav54
+
+- 美团发布十大举措升级“放心外卖”体系
+  - tags: ['美团发布十大举措升级', '放心外卖', '体系']
+  - cats: [内容电商, 传统电商, 规则与政策]
+  - url: https://www.dsb.cn/p/01kpfmkp915rr2bbe9kgrs7ngz
+
+- 2026北京亦庄人形机器人半程马拉松落幕 超10万人在京东搜索“机器人马拉松”
+  - tags: ['北京亦庄人形机器人半程马拉松落幕', '万人在京东搜索', '机器人马拉松']
+  - cats: [组织架构与人事, 传统电商]
+  - url: https://www.dsb.cn/p/01kpj5rcx9qfafk04n4cxvmdxz
+
+- PayKKa与DeepClick达成战略合作
+  - tags: ['PayKKa', 'DeepClick', '达成战略合作']
+  - cats: [内容电商, 传统电商, 规则与政策]
+  - url: https://www.dsb.cn/p/01kphtvdswmtv9jaz09r5c0cj2
+
+- 深圳市宝安区跨境电商协会成立 智美科技董事长许春伟当选会长
+  - tags: ['深圳市宝安区跨境电商协会成立', '智美科技董事长许春伟当选会长']
+  - cats: [组织架构与人事, 传统电商, 跨境电商]
+  - url: https://www.dsb.cn/p/01kpht81fcmd3m6ze9t6ksemnd
+
+- 京东物流通过CMMI-5级（能力成熟度模型集成）认证
+  - tags: ['京东物流通过', 'CMMI', '能力成熟度模型集成', '认证']
+  - cats: [组织架构与人事, 传统电商]
+  - url: https://www.dsb.cn/p/01kphsnk5f0qavggd1ad3y2w4t
+
+- 交个朋友智能化选品中心获评浙江省级电商选品中心
+  - tags: ['交个朋友智能化选品中心获评浙江省级电商选品中心']
+  - cats: [传统电商, AI 技术]
+  - url: https://www.dsb.cn/p/01kphrq85rghczwmxmysbsk95h
+
+- 银联商务与大理州、恒丰银行签订合作协议
+  - tags: ['银联商务与大理州', '恒丰银行签订合作协议']
+  - cats: [内容电商, 传统电商, 规则与政策]
+  - url: https://www.dsb.cn/p/01kphrazwf0j5ced0ztm0p2x0p
+
+- 1688霍尔果斯样品中心正式投入运营
+  - tags: ['霍尔果斯样品中心正式投入运营']
+  - cats: [淘系平台]
+  - url: https://www.dsb.cn/p/01kphqwjxyht65cjv1d3x58wnn
+
+- Royal Mail英国皇家邮政与Tesco合作试点智能包裹快递柜
+  - tags: ['Royal Mail', '英国皇家邮政与', 'Tesco', '合作试点智能包裹快递柜']
+  - cats: [AI 技术]
+  - url: https://www.dsb.cn/p/01kphpnqv8wdvqdm1znnhpqqec
+
+- 京东快递推出樱桃专项惠农方案 新增千个乡村揽收点
+  - tags: ['京东快递推出樱桃专项惠农方案', '新增千个乡村揽收点']
+  - cats: [组织架构与人事, 传统电商]
+  - url: https://www.dsb.cn/p/01kpfzej1b8k2wy719wyt7x0cy
+
+- 顺丰上海首家全生态智慧物流产业学院揭牌
+  - tags: ['顺丰上海首家全生态智慧物流产业学院揭牌']
+  - cats: [内容电商, 传统电商, 规则与政策]
+  - url: https://www.dsb.cn/p/01kpfvw4xmz6spp18jr6bchchb
+
+- 易宝支付与中国银行胡志明市分行达成战略合作
+  - tags: ['易宝支付与中国银行胡志明市分行达成战略合作']
+  - cats: [内容电商, 传统电商, 规则与政策]
+  - url: https://www.dsb.cn/p/01kpfvp2azer1v32ny8z89e9wn
+
+---
+
 ## 2026-04-18
 
 - DeepSeek被曝首次寻求外部融资 估值超100亿美元
