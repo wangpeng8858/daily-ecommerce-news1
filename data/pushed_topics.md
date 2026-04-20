@@ -1,3 +1,247 @@
+## 2026-04-20
+
+- 阿里国际站在印尼推出贸易保障服务
+  - tags: ['阿里国际站在印尼推出贸易保障服务']
+  - platform: 淘系
+  - topics: [general]
+
+- Shopee菲律宾本土店商品须完整标注保固信息
+  - tags: ['Shopee', '菲律宾本土店商品须完整标注保固信息']
+  - platform: none
+  - topics: [跨境电商]
+
+- 敦煌网发布足球服限价新规 4月20日起执行
+  - tags: ['敦煌网发布足球服限价新规', '日起执行']
+  - platform: none
+  - topics: [规则与政策]
+
+- 加拿大贸易部长访问中国 与电动车企业洽谈市场准入
+  - tags: ['加拿大贸易部长访问中国', '与电动车企业洽谈市场准入']
+  - platform: none
+  - topics: [规则与政策]
+
+- 敦煌网启动2026世界杯全周期促销及双重招商活动
+  - tags: ['敦煌网启动', '世界杯全周期促销及双重招商活动']
+  - platform: none
+  - topics: [general]
+
+- 抖音天价挖人大反转，薪资内幕彻底曝光
+  - tags: ['抖音天价挖人大反转', '薪资内幕彻底曝光']
+  - platform: 抖音
+  - topics: [general]
+
+- 快手震怒，大批网红被永久封杀
+  - tags: ['快手震怒', '大批网红被永久封杀']
+  - platform: 快手
+  - topics: [general]
+
+- 雷军迎来高光时刻
+  - tags: ['雷军迎来高光时刻']
+  - platform: none
+  - topics: [general]
+
+- 俞敏洪要给董宇辉上一课
+  - tags: ['俞敏洪要给董宇辉上一课']
+  - platform: none
+  - topics: [general]
+
+- 多家跨境公司暴雷，被曝逃税11亿
+  - tags: ['多家跨境公司暴雷', '被曝逃税']
+  - platform: none
+  - topics: [跨境电商, 电商财税]
+
+- 阿里官宣首款具身机器人“高德途途”
+  - tags: ['阿里官宣首款具身机器人', '高德途途']
+  - platform: 淘系
+  - topics: [general]
+
+- 钉钉CEO陈航：软件时代已彻底终结
+  - tags: ['钉钉', 'CEO', '陈航', '软件时代已彻底终结']
+  - platform: none
+  - topics: [组织人事]
+
+- 京东物流通过CMMI-5级认证
+  - tags: ['京东物流通过', 'CMMI', '级认证']
+  - platform: 京东
+  - topics: [general]
+
+- 1688霍尔果斯样品中心投入运营
+  - tags: ['霍尔果斯样品中心投入运营']
+  - platform: 淘系
+  - topics: [general]
+
+- 京东健康将在济南布局100家自营药房
+  - tags: ['京东健康将在济南布局', '家自营药房']
+  - platform: 京东
+  - topics: [general]
+
+- 高德公开全球首款开放环境全自主具身机器人
+  - tags: ['高德公开全球首款开放环境全自主具身机器人']
+  - platform: none
+  - topics: [general]
+
+- 全国首家“京东服务技术培训认证中心”挂牌落地
+  - tags: ['全国首家', '京东服务技术培训认证中心', '挂牌落地']
+  - platform: 京东
+  - topics: [general]
+
+- 2026年3月浙江省物流业景气指数为58.03%
+  - tags: ['月浙江省物流业景气指数为']
+  - platform: none
+  - topics: [general]
+
+- 山东首家沃来采农业服务站将于4月23日开业
+  - tags: ['山东首家沃来采农业服务站将于', '日开业']
+  - platform: none
+  - topics: [general]
+
+- 滴滴：洛阳赏花季带动市内打车需求涨195%
+  - tags: ['滴滴', '洛阳赏花季带动市内打车需求涨']
+  - platform: none
+  - topics: [general]
+
+- 携程集团与斐济旅游局签署战略合作备忘录
+  - tags: ['携程集团与斐济旅游局签署战略合作备忘录']
+  - platform: none
+  - topics: [general]
+
+- 京东健康亮相API上海成人展 携手超20家品牌成立品质安心联盟
+  - tags: ['京东健康亮相', 'API', '上海成人展', '携手超', '家品牌成立品质安心联盟']
+  - platform: 京东
+  - topics: [消费零售]
+
+- 深圳市宝安区跨境电商协会成立 智美科技董事长许春伟当选会长
+  - tags: ['深圳市宝安区跨境电商协会成立', '智美科技董事长许春伟当选会长']
+  - platform: none
+  - topics: [跨境电商, 组织人事]
+
+- 交个朋友智能化选品中心获评浙江省级电商选品中心
+  - tags: ['交个朋友智能化选品中心获评浙江省级电商选品中心']
+  - platform: none
+  - topics: [general]
+
+- 银联商务与大理州、恒丰银行签订合作协议
+  - tags: ['银联商务与大理州', '恒丰银行签订合作协议']
+  - platform: none
+  - topics: [general]
+
+- 京东快递推出樱桃专项惠农方案 新增千个乡村揽收点
+  - tags: ['京东快递推出樱桃专项惠农方案', '新增千个乡村揽收点']
+  - platform: 京东
+  - topics: [general]
+
+- 千万网红留几手杀回来了，大骂网友是蠢货
+  - tags: ['千万网红留几手杀回来了', '大骂网友是蠢货']
+  - platform: none
+  - topics: [general]
+
+- 大佬们扎堆小米园区，雷军太风光了
+  - tags: ['大佬们扎堆小米园区', '雷军太风光了']
+  - platform: none
+  - topics: [general]
+
+- AI药物递送第一股剂泰科技通过聆讯，AI制药三小龙齐聚港交所
+  - tags: ['AI', '药物递送第一股剂泰科技通过聆讯', '制药三小龙齐聚港交所']
+  - platform: none
+  - topics: [general]
+
+- 2026北京亦庄机器人半马开跑；WWDC26海报暗藏玄机；华为Pura X Max真机曝光｜D
+  - tags: ['北京亦庄机器人半马开跑', 'WWDC', '海报暗藏玄机', '华为', 'Pura X Max', '真机曝光']
+  - platform: none
+  - topics: [general]
+
+- 性能豪华大五座SUV星途EX7正式上市 售价19.99万元起
+  - tags: ['性能豪华大五座', 'SUV', '星途', 'EX', '正式上市', '售价']
+  - platform: none
+  - topics: [general]
+
+- 奥比中光2025年度净利润1.28亿元 上市以来首次盈利
+  - tags: ['奥比中光', '年度净利润', '亿元', '上市以来首次盈利']
+  - platform: none
+  - topics: [general]
+
+- 广汽昊铂 S600 将于北京车展开启盲订
+  - tags: ['广汽昊铂', '将于北京车展开启盲订']
+  - platform: none
+  - topics: [general]
+
+- 力源信息一季度归母净利润1.37亿元，同比增长240.6%
+  - tags: ['力源信息一季度归母净利润', '亿元', '同比增长']
+  - platform: none
+  - topics: [general]
+
+- 云计算市场变天，国内云大厂都在憋什么招？
+  - tags: ['云计算市场变天', '国内云大厂都在憋什么招']
+  - platform: none
+  - topics: [general]
+
+- 高德ABot-World登顶四项权威评测，全球唯一在物理合规性、动作可控性、零样本泛化均
+  - tags: ['高德', 'ABot', 'World', '登顶四项权威评测', '全球唯一在物理合规性', '动作可控性']
+  - platform: none
+  - topics: [规则与政策]
+
+- 魏建军对话平遥：探寻契约精神之源，以信义底色筑牢中国智造根基
+  - tags: ['魏建军对话平遥', '探寻契约精神之源', '以信义底色筑牢中国智造根基']
+  - platform: none
+  - topics: [general]
+
+- 消息称初创企业Cursor即将完成20亿美元融资，估值达500亿美元
+  - tags: ['消息称初创企业', 'Cursor', '即将完成', '亿美元融资', '估值达', '亿美元']
+  - platform: none
+  - topics: [general]
+
+- 佳洁士锁白牙膏包装上的“锁白”非功效，是商标
+  - tags: ['佳洁士锁白牙膏包装上的', '锁白', '非功效', '是商标']
+  - platform: none
+  - topics: [general]
+
+- 消息称 DeepSeek 正寻求首轮外部融资，估值超百亿美元
+  - tags: ['消息称', 'DeepSeek', '正寻求首轮外部融资', '估值超百亿美元']
+  - platform: none
+  - topics: [general]
+
+- 长城哈弗猛龙PLUS开启预售：售价18.98~21.58万元
+  - tags: ['长城哈弗猛龙', 'PLUS', '开启预售', '售价', '万元']
+  - platform: none
+  - topics: [general]
+
+- 一碗牛肉面，一场楚超赛：东风风神点燃湖北全民足球热情
+  - tags: ['一碗牛肉面', '一场楚超赛', '东风风神点燃湖北全民足球热情']
+  - platform: none
+  - topics: [general]
+
+- 消息称Meta计划5月裁员8000人
+  - tags: ['消息称', 'Meta', '计划', '月裁员']
+  - platform: none
+  - topics: [组织人事]
+
+- 蔚来乐道 L90 外观亮点公布：双色车身、辅助驾驶小蓝灯，4 月 21 日发布
+  - tags: ['蔚来乐道', '外观亮点公布', '双色车身', '辅助驾驶小蓝灯', '日发布']
+  - platform: none
+  - topics: [general]
+
+- 抖音打击赌博导流黑产：2026 年以来处罚违规直播间 5.5 万个
+  - tags: ['抖音打击赌博导流黑产', '年以来处罚违规直播间', '万个']
+  - platform: 抖音
+  - topics: [规则与政策]
+
+- 前荣耀掌门人赵明转战智能驾驶：千里科技智驾已达行业顶尖
+  - tags: ['前荣耀掌门人赵明转战智能驾驶', '千里科技智驾已达行业顶尖']
+  - platform: none
+  - topics: [general]
+
+- 海航控股2025年营收稳增至685亿元
+  - tags: ['海航控股', '年营收稳增至', '亿元']
+  - platform: none
+  - topics: [general]
+
+- 7大平台回应涉“幽灵外卖”被处罚：诚恳接受，坚决服从
+  - tags: ['大平台回应涉', '幽灵外卖', '被处罚', '诚恳接受', '坚决服从']
+  - platform: none
+  - topics: [规则与政策]
+
+---
+
 ## 2026-04-19
 
 - 阿里国际站在印尼推出贸易保障服务
