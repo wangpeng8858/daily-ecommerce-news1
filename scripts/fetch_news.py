@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-电商资讯早报 - 智能抓取、去重、分类推送系统
-功能：多源抓取 → 关键词分类 → 历史去重 → 格式化推送到钉钉
+电商资讯早报 v2.0 - 精准分类·分层推送
+核心逻辑：
+  1. 多源抓取 → 2. 关键词智能分类 → 3. 7天去重
+  4. 分层排版：淘系/AI重点展开 + 其他平台观点摘要
 """
 
 import os
@@ -14,104 +16,97 @@ from datetime import datetime, timedelta
 from bs4 import BeautifulSoup
 
 # ============================================================
-# 配置区
+# 新闻源配置
 # ============================================================
 
-# 新闻抓取源（对爬虫友好，SSR 要求低）
 NEWS_SOURCES = [
     {
         "name": "亿邦动力",
         "url": "https://www.ebrun.com/newest/",
-        "selectors": ["div.item h3 a", ".list h3 a", "h3 a"],
+        "selectors": ["h3 a", "div.item h3 a", ".list h3 a"],
         "url_prefix": "https://www.ebrun.com",
-        "limit": 20,
-        "categories": ["规则与政策", "传统电商", "跨境电商", "电商财税"],
+        "limit": 30,
     },
     {
         "name": "电商派",
         "url": "https://www.dsb.cn/",
         "selectors": ["a[href*='/p/']"],
         "url_prefix": "https://www.dsb.cn",
+        "limit": 30,
+    },
+    {
+        "name": "DoNews",
+        "url": "https://www.donews.com/",
+        "selectors": [".title a", "h3 a", ".article-title a"],
+        "url_prefix": "https://www.donews.com",
         "limit": 20,
-        "categories": ["内容电商", "传统电商", "规则与政策"],
     },
     {
-        "name": "雨果网",
-        "url": "https://www.cifnews.com/news",
-        "selectors": ["h3 a", ".news-title a", ".article-title a", ".list-title a", "a.title"],
-        "url_prefix": "https://www.cifnews.com",
+        "name": "钛媒体",
+        "url": "https://www.tmtpost.com/nictation/",
+        "selectors": ["h3 a", ".content-item a"],
+        "url_prefix": "https://www.tmtpost.com",
         "limit": 15,
-        "categories": ["跨境电商"],
-    },
-    {
-        "name": "36氪电商",
-        "url": "https://36kr.com/information/e-commerce/",
-        "selectors": ["a.article-item-title", ".article-item-title a", "h3 a"],
-        "url_prefix": "https://36kr.com",
-        "limit": 10,
-        "categories": ["传统电商", "AI 技术", "规则与政策"],
     },
 ]
 
-# 分类关键词映射
-CATEGORY_KEYWORDS = {
-    "规则与政策": [
-        "新规", "规范", "监管", "合规", "处罚", "政策", "法规", "条例", "整治",
-        "商务部", "工信部", "市场监管", "征求意见", "草案", "暂行", "试行",
-        "平台规则", "准入", "禁令", "限制", "打击",
-    ],
-    "组织架构与人事": [
-        "任命", "离职", "辞任", "换届", "人事", "架构调整", "事业部", "合并",
-        "拆分", "新高管", "CEO", "总裁", "副总裁", "首席", "总经理", "董事",
-        "组织架构", "业务调整", "汇报", "上任", "卸任", "卸任", "调任",
-        "淘天", "抖音电商", "京东", "拼多多", "快手", "小红书", "阿里",
-    ],
-    "淘系平台": [
-        "淘宝", "天猫", "淘天", "千牛", "阿里", "1688", "闲鱼", "盒马",
-        "速卖通", "Lazada", "阿里妈妈", "淘系", "天猫双11", "天猫618",
-    ],
-    "内容电商": [
-        "抖音", "快手", "小红书", "直播", "短视频", "带货", "达人", "主播",
-        "视频号", "B站", "内容", "种草", "笔记", "直播间", "投流",
-        "KOL", "KOC", "矩阵", "切片", "切片带货",
-    ],
-    "传统电商": [
-        "京东", "拼多多", "淘宝", "天猫", "苏宁", "唯品会", "当当", "国美",
-        "电商", "零售", "商超", "便利店", "O2O", "即时零售",
-    ],
-    "跨境电商": [
-        "跨境", "亚马逊", "Shopee", "Temu", "TikTok Shop", "SHEIN",
-        "出海", "海外", "全球化", "独立站", "跨境电商", "外贸",
-        "CIFNEWS", "雨果", "Lazada", "速卖通", "海外仓", "FBA",
-    ],
-    "电商财税": [
-        "税务", "财税", "缴税", "税", "发票", "税率", "稽查", "补缴",
-        "增值税", "所得税", "关税", "出口退税", "税务总局",
-    ],
-    "AI 技术": [
-        "AI", "人工智能", "大模型", "ChatGPT", "GPT", "文心", "通义",
-        "LLM", "智能", "自动化", "算法", "机器学习", "生成式",
-        "AIGC", "数字人", "AI客服", "AI电商", "AI工具",
-    ],
+# ============================================================
+# 智能分类系统
+# ============================================================
+
+# 平台标识关键词（决定归属哪个平台板块）
+PLATFORM_KEYWORDS = {
+    "淘系": {
+        "primary": ["淘宝", "天猫", "淘天", "千牛", "阿里妈妈", "闲鱼", "盒马", "1688", "速卖通", "Lazada", "菜鸟", "阿里云", "淘宝直播", "天猫国际", "阿里"],
+        "ai": ["通义", "Qwen", "夸克", "阿里AI", "淘宝AI", "天猫AI", "阿里大模型"],
+    },
+    "抖音": {
+        "primary": ["抖音", "抖音电商", "字节跳动", "字节", "TikTok", "今日头条", "西瓜视频", "红果", "红果短剧"],
+        "ai": ["豆包", "云雀", "抖音AI", "字节AI", "TikTok AI"],
+    },
+    "京东": {
+        "primary": ["京东", "JD", "京喜", "京东物流", "京东科技", "达达"],
+        "ai": ["言犀", "京东AI", "ChatJD"],
+    },
+    "拼多多": {
+        "primary": ["拼多多", "PDD", "Temu", "多多", "拼团"],
+        "ai": [],
+    },
+    "快手": {
+        "primary": ["快手", "快手电商", "快手科技", "磁力引擎"],
+        "ai": ["快意", "快手AI"],
+    },
+    "小红书": {
+        "primary": ["小红书", "RED", "REDnote"],
+        "ai": [],
+    },
 }
 
-# 平台动态板块 - 需要特别关注的公司
-PLATFORM_COMPANIES = ["淘天", "抖音电商", "京东", "拼多多", "快手", "小红书", "阿里", "字节跳动"]
+# 非平台的专题关键词
+TOPIC_KEYWORDS = {
+    "AI 技术": ["AI", "人工智能", "大模型", "ChatGPT", "GPT", "LLM", "AIGC", "生成式", "数字人", "AI客服", "AI工具", "AI电商", "智能体", "Agent", "Sora", "Midjourney", "Claude", "Gemini", "文心", "智谱", "深度学习", "机器学习"],
+    "跨境电商": ["跨境", "亚马逊", "Shopee", "出海", "海外", "独立站", "跨境电商", "外贸", "SHEIN", "TikTok Shop", "海外仓", "FBA", "DTC"],
+    "电商财税": ["税务", "财税", "缴税", "发票", "税率", "稽查", "补缴", "增值税", "所得税", "关税", "出口退税", "税务总局", "偷税", "逃税", "税务筹划"],
+    "规则与政策": ["新规", "监管", "合规", "处罚", "政策", "法规", "条例", "整治", "商务部", "工信部", "市场监管", "征求意见", "平台规则", "准入", "禁令", "反垄断", "不正当竞争", "数据安全", "隐私保护"],
+    "组织人事": ["任命", "离职", "辞任", "换届", "人事变动", "架构调整", "事业部", "新高管", "CEO", "总裁", "副总裁", "首席", "总经理", "董事", "上任", "卸任", "调任", "裁员", "优化"],
+    "消费零售": ["零售", "商超", "便利店", "O2O", "即时零售", "生鲜", "即时配送", "消费", "新消费", "品牌", "供应链", "门店"],
+}
 
-# 钉钉配置
+# ============================================================
+# 配置
+# ============================================================
+
 DINGTALK_WEBHOOK = os.getenv("DINGTALK_WEBHOOK", "")
 DINGTALK_SECRET = os.getenv("DINGTALK_SECRET", "")
-
-# 历史记忆文件路径（仓库内）
 MEMORY_FILE = "data/pushed_topics.md"
 
 
 # ============================================================
-# 历史去重模块
+# 历史去重
 # ============================================================
 
-def load_pushed_tags_from_local():
-    """从本地 data/pushed_topics.md 读取已推送标签"""
+def load_pushed_tags():
+    """从本地 data/pushed_topics.md 读取近7天已推送标签"""
     pushed = set()
     filepath = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), MEMORY_FILE)
     if not os.path.exists(filepath):
@@ -119,8 +114,6 @@ def load_pushed_tags_from_local():
 
     today = datetime.now()
     in_recent = False
-    current_tags = []
-
     with open(filepath, "r", encoding="utf-8") as f:
         for line in f:
             line = line.strip()
@@ -136,12 +129,10 @@ def load_pushed_tags_from_local():
                 tags_str = line.replace("- tags:", "").strip().strip("[]")
                 tags = [t.strip().strip("'\"") for t in tags_str.split(",")]
                 pushed.update(t.lower() for t in tags if t.strip())
-
     return pushed
 
 
-def load_memory_content_local():
-    """读取完整的 memory 文件内容"""
+def load_memory_content():
     filepath = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), MEMORY_FILE)
     if os.path.exists(filepath):
         with open(filepath, "r", encoding="utf-8") as f:
@@ -149,355 +140,332 @@ def load_memory_content_local():
     return ""
 
 
-def save_memory_local(memory_content):
-    """保存 memory 到本地文件（checkout 目录中）"""
+def save_memory(content):
     filepath = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), MEMORY_FILE)
     os.makedirs(os.path.dirname(filepath), exist_ok=True)
     with open(filepath, "w", encoding="utf-8") as f:
-        f.write(memory_content)
+        f.write(content)
 
 
 def git_commit_and_push():
-    """通过 git 命令提交并推送 memory 文件变更"""
     import subprocess
     try:
-        # Actions 环境中自带 git，且已配置好 token
         repo_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
         subprocess.run(["git", "-C", repo_dir, "config", "user.name", "github-actions[bot]"], check=True, capture_output=True)
         subprocess.run(["git", "-C", repo_dir, "config", "user.email", "github-actions[bot]@users.noreply.github.com"], check=True, capture_output=True)
         subprocess.run(["git", "-C", repo_dir, "add", MEMORY_FILE], check=True, capture_output=True)
         result = subprocess.run(["git", "-C", repo_dir, "diff", "--cached", "--quiet"], capture_output=True)
         if result.returncode == 0:
-            print("[INFO] memory 文件无变更，跳过提交")
             return
         subprocess.run(["git", "-C", repo_dir, "commit", "-m", f"docs: update pushed topics {datetime.now().strftime('%Y-%m-%d')}"], check=True, capture_output=True)
         subprocess.run(["git", "-C", repo_dir, "push"], check=True, capture_output=True)
-        print("[OK] 历史记忆已提交并推送到仓库")
+        print("[OK] 历史记忆已同步")
     except subprocess.CalledProcessError as e:
-        print(f"[WARN] git 操作失败: {e}")
-        if e.stderr:
-            print(f"  stderr: {e.stderr.decode('utf-8', errors='replace')[:200]}")
+        print(f"[WARN] git同步失败: {e}")
 
 
 # ============================================================
-# 新闻抓取模块
+# 新闻抓取
 # ============================================================
 
-def fetch_news_from_source(source):
-    """从单个新闻源抓取新闻"""
-    news_list = []
+def fetch_source(source):
+    items = []
     try:
         headers = {
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
             "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-            "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
+            "Accept-Language": "zh-CN,zh;q=0.9",
         }
         resp = requests.get(source["url"], headers=headers, timeout=15, allow_redirects=True)
         resp.raise_for_status()
         resp.encoding = resp.apparent_encoding or "utf-8"
-
         soup = BeautifulSoup(resp.text, "html.parser")
 
-        for selector in source["selectors"]:
-            elements = soup.select(selector.strip())
-            for elem in elements[:source["limit"] * 2]:
+        for sel in source["selectors"]:
+            elems = soup.select(sel.strip())
+            for elem in elems[:source["limit"] * 2]:
                 href = elem.get("href", "")
                 title = elem.get_text(strip=True)
-
-                if not title or len(title) < 6:
+                if not title or len(title) < 8:
                     continue
-
                 if href.startswith("/"):
                     href = source["url_prefix"] + href
                 elif not href.startswith("http"):
                     continue
-
-                skip_kw = ["javascript:", "#", "login", "register", "about", "contact"]
-                if any(kw in href.lower() for kw in skip_kw):
+                skip = ["javascript:", "#", "login", "register", "about", "contact", "void"]
+                if any(k in href.lower() for k in skip):
                     continue
-
-                news_list.append({
-                    "title": title,
-                    "url": href,
-                    "source": source["name"],
-                    "categories": source.get("categories", []),
-                })
-
-            if news_list:
+                items.append({"title": title, "url": href, "source": source["name"]})
+            if items:
                 break
 
         # 同源去重
         seen = set()
         unique = []
-        for item in news_list:
-            key = item["title"][:15]
+        for item in items:
+            key = item["title"][:12]
             if key not in seen:
                 seen.add(key)
                 unique.append(item)
-        news_list = unique[:source["limit"]]
+        items = unique[:source["limit"]]
 
     except Exception as e:
-        print(f"  [ERROR] {source['name']}: {e}")
+        print(f"  [ERR] {source['name']}: {e}")
+    return items
 
-    return news_list
 
-
-def fetch_all_news():
-    """从所有源抓取新闻"""
+def fetch_all():
     all_news = []
-    seen_titles = set()
-    print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M')}] 开始抓取电商资讯...")
-
-    for source in NEWS_SOURCES:
-        items = fetch_news_from_source(source)
+    seen = set()
+    print(f"[{datetime.now().strftime('%H:%M')}] 抓取资讯...")
+    for src in NEWS_SOURCES:
+        items = fetch_source(src)
         for item in items:
-            title_key = item["title"][:15].lower()
-            if title_key not in seen_titles:
-                seen_titles.add(title_key)
+            key = item["title"][:12].lower()
+            if key not in seen:
+                seen.add(key)
                 all_news.append(item)
-        print(f"  - {source['name']}: {len(items)} 条")
-
-    print(f"  原始合计: {len(all_news)} 条")
+        print(f"  {src['name']}: {len(items)} 条")
+    print(f"  合计: {len(all_news)} 条")
     return all_news
 
 
 # ============================================================
-# 分类与标签模块
+# 智能分类引擎
 # ============================================================
 
-def classify_and_tag(item):
+def classify_item(title):
     """
-    对每条资讯进行分类和打标签
-    返回: (categories_list, tags_list, is_platform_dynamic)
+    对标题进行分类，返回:
+    - platform: 所属平台（淘系/抖音/京东/... 或 None）
+    - is_ai: 是否AI相关
+    - topics: 匹配的专题列表
+    - priority: 优先级 (1=淘系+AI, 2=淘系, 3=其他AI, 4=其他)
     """
-    title = item["title"].lower()
-    matched_categories = []
+    t = title.lower()
+    platform = None
+    is_ai = False
 
-    for cat, keywords in CATEGORY_KEYWORDS.items():
-        for kw in keywords:
-            if kw.lower() in title:
-                if cat not in matched_categories:
-                    matched_categories.append(cat)
+    # 检查平台归属
+    for plat, kws in PLATFORM_KEYWORDS.items():
+        for kw in kws["primary"]:
+            if kw.lower() in t:
+                platform = plat
                 break
-
-    # 如果没有匹配到任何分类，根据来源给一个默认分类
-    if not matched_categories:
-        matched_categories = item.get("categories", ["行业动态"])
-
-    # 生成标签：从标题中提取关键名词短语
-    tags = extract_tags(item["title"])
-
-    # 判断是否是平台动态
-    is_platform = False
-    if "组织架构与人事" in matched_categories:
-        is_platform = True
-    for company in PLATFORM_COMPANIES:
-        if company.lower() in title:
-            is_platform = True
+        if platform:
+            # 检查该平台AI关键词
+            for ai_kw in kws.get("ai", []):
+                if ai_kw.lower() in t:
+                    is_ai = True
+                    break
             break
 
-    return matched_categories, tags, is_platform
+    # 检查通用AI关键词（即使没匹配到具体平台）
+    if not is_ai:
+        for kw in TOPIC_KEYWORDS.get("AI 技术", []):
+            if kw.lower() in t:
+                is_ai = True
+                break
+
+    # 匹配专题
+    topics = []
+    for topic, kws in TOPIC_KEYWORDS.items():
+        if topic == "AI 技术":
+            continue
+        for kw in kws:
+            if kw.lower() in t:
+                if topic not in topics:
+                    topics.append(topic)
+                break
+
+    # 优先级
+    if platform == "淘系" and is_ai:
+        priority = 1
+    elif platform == "淘系":
+        priority = 2
+    elif is_ai:
+        priority = 3
+    else:
+        priority = 4
+
+    return platform, is_ai, topics, priority
 
 
 def extract_tags(title):
-    """从标题中提取核心关键词作为标签"""
-    # 移除常见虚词
-    stop_words = {"的", "了", "在", "是", "我", "有", "和", "就", "不", "人", "都",
-                  "一", "一个", "上", "也", "很", "到", "说", "要", "去", "你",
-                  "会", "着", "没有", "看", "好", "自己", "这", "被", "她", "他",
-                  "它", "与", "及", "等", "将", "已", "对", "为", "从", "可",
-                  "让", "把", "被", "比", "更", "最", "其", "如何", "如何", "什么"}
+    """提取关键词标签"""
+    stop = {"的", "了", "在", "是", "我", "有", "和", "就", "不", "人", "都",
+            "一", "上", "也", "很", "到", "说", "要", "去", "你", "会", "着",
+            "没", "看", "好", "这", "被", "它", "与", "及", "等", "将", "已",
+            "对", "为", "从", "可", "让", "把", "更", "最", "其", "什么"}
     words = re.findall(r'[\u4e00-\u9fa5]{2,}|[A-Za-z]+(?:\s[A-Za-z]+)*', title)
     tags = []
+    seen = set()
     for w in words:
         w = w.strip()
-        if len(w) >= 2 and w not in stop_words:
+        if len(w) >= 2 and w not in stop and w.lower() not in seen:
+            seen.add(w.lower())
             tags.append(w)
-
-    # 去重并取前6个
-    seen = set()
-    unique_tags = []
-    for t in tags:
-        tl = t.lower()
-        if tl not in seen:
-            seen.add(tl)
-            unique_tags.append(t)
-        if len(unique_tags) >= 6:
+        if len(tags) >= 6:
             break
+    return tags if tags else [title[:10]]
 
-    return unique_tags if unique_tags else [title[:10]]
 
-
-def check_duplicate(tags, pushed_tags):
-    """
-    检查是否与近7天已推送的内容高度重复
-    规则：核心关键词3个以上匹配则跳过
-    """
+def is_duplicate(tags, pushed_tags):
     if not pushed_tags:
         return False
-    match_count = sum(1 for t in tags if t.lower() in pushed_tags)
-    return match_count >= 3
-
-
-def format_memory_entry(news_list):
-    """生成今日推送记录的 Markdown 条目"""
-    today = datetime.now().strftime("%Y-%m-%d")
-    lines = [f"## {today}", ""]
-    for item in news_list:
-        tags_str = ", ".join(f"'{t}'" for t in item.get("tags", []))
-        cats_str = ", ".join(item.get("categories", []))
-        lines.append(f"- {item['title']}")
-        lines.append(f"  - tags: [{tags_str}]")
-        lines.append(f"  - cats: [{cats_str}]")
-        lines.append(f"  - url: {item['url']}")
-        lines.append("")
-    return "\n".join(lines)
+    return sum(1 for t in tags if t.lower() in pushed_tags) >= 3
 
 
 # ============================================================
-# 消息格式化模块
+# 消息格式化 v2.0 - 分层排版
 # ============================================================
 
-def build_description(item):
-    """根据标题和分类生成简要描述"""
-    title = item["title"]
-    cats = item.get("categories", [])
-
-    # 根据标题中是否包含具体数字或关键事件信息来判断
-    if any(w in title for w in ["发布", "宣布", "推出", "上线", "发布", "更新", "调整", "升级"]):
-        return "相关动态更新，详情请查看原文。"
-    return "行业最新动态，详情请查看原文。"
-
-
-def is_taobao_related(item):
-    """判断是否是淘系相关内容（需详细展开）"""
-    cats = item.get("categories", [])
-    tags = item.get("tags", [])
-    taobao_markers = ["淘宝", "天猫", "淘天", "阿里", "千牛", "1688", "闲鱼", "盒马", "阿里妈妈"]
-    if "淘系平台" in cats:
-        return True
-    for t in tags:
-        if any(m in t for m in taobao_markers):
-            return True
-    return False
-
-
-def format_dingtalk_message(news_list):
-    """格式化钉钉 Markdown 消息"""
+def format_message(news_list):
+    """
+    分层排版策略：
+    ━ 第一层：淘系平台（含AI）→ 重点展开
+    ━ 第二层：AI电商技术（非淘系）→ 重点展开
+    ━ 第三层：其他平台动态 → 观点 + 链接
+    ━ 第四层：行业专题（政策/财税/跨境/消费/人事）→ 观点 + 链接
+    """
     today = datetime.now().strftime("%Y年%m月%d日")
+    weekday = ["周一", "周二", "周三", "周四", "周五", "周六", "周日"][datetime.now().weekday()]
     now_time = datetime.now().strftime("%H:%M")
-    weekday_names = ["周一", "周二", "周三", "周四", "周五", "周六", "周日"]
-    weekday = weekday_names[datetime.now().weekday()]
 
-    # 分离普通资讯和平台动态
-    platform_items = []
-    regular_items = []
+    # 按层级分组
+    layers = {
+        "taobao": [],     # 淘系（含AI）
+        "ai": [],         # AI电商（非淘系）
+        "platform": {},   # 其他平台
+        "topic": {},      # 专题
+    }
+
+    platform_order = ["抖音", "京东", "拼多多", "快手", "小红书"]
+
     for item in news_list:
-        if item.get("is_platform", False):
-            platform_items.append(item)
+        platform, is_ai, topics, priority = item["meta"]
+        if priority in (1, 2):
+            layers["taobao"].append(item)
+        elif priority == 3:
+            layers["ai"].append(item)
+        elif platform:
+            if platform not in layers["platform"]:
+                layers["platform"][platform] = []
+            layers["platform"][platform].append(item)
         else:
-            regular_items.append(item)
+            for tp in topics:
+                if tp not in layers["topic"]:
+                    layers["topic"][tp] = []
+                layers["topic"][tp].append(item)
+            if not topics:
+                if "行业动态" not in layers["topic"]:
+                    layers["topic"]["行业动态"] = []
+                layers["topic"]["行业动态"].append(item)
 
     # 构建消息
-    header = f"## 📰 电商资讯早报 | {today} {weekday}"
+    parts = []
+    parts.append(f"## 📰 电商早报 | {today} {weekday}")
+    parts.append(f"\n> 今日精选 **{len(news_list)}** 条行业动态  |  更新时间 {now_time}")
+    parts.append("---")
 
-    # 平台动态板块
-    platform_section = ""
-    if platform_items:
-        platform_section = "\n\n### 🏢 平台动态\n\n"
-        for i, item in enumerate(platform_items, 1):
-            desc = build_description(item)
-            cats = "、".join(item.get("categories", []))
-            platform_section += (
-                f"**{i}. {item['title']}**\n\n"
-                f"类别：{cats}\n"
-                f"{desc}\n\n"
-                f"📎 [查看原文]({item['url']})\n\n"
-            )
-        platform_section += "---\n"
+    # 第一层：淘系（重点展开）
+    if layers["taobao"]:
+        parts.append("\n### 🔴 淘系焦点")
+        parts.append("")
+        for i, item in enumerate(layers["taobao"], 1):
+            platform, is_ai, topics, priority = item["meta"]
+            ai_tag = " 🤖" if is_ai else ""
+            source = item["source"]
+            parts.append(f"**{i}. {item['title']}**{ai_tag}")
+            parts.append(f"")
+            # 生成简要点评
+            topics_str = "、".join(topics) if topics else "平台动态"
+            parts.append(f"🏷️ `{topics_str}`  |  📌 来源：{source}")
+            parts.append(f"")
+            parts.append(f"📎 [查看原文]({item['url']})")
+            parts.append("")
 
-    # 普通资讯板块
-    news_section = ""
-    if regular_items:
-        news_section = "\n\n### 📋 今日资讯\n\n"
-        for i, item in enumerate(regular_items, 1):
-            desc = build_description(item)
-            is_tb = is_taobao_related(item)
-            cats = "、".join(item.get("categories", []))
-            source = item.get("source", "")
+    # 第二层：AI电商（重点展开）
+    if layers["ai"]:
+        parts.append("\n### 🤖 AI + 电商")
+        parts.append("")
+        for i, item in enumerate(layers["ai"], 1):
+            source = item["source"]
+            platform = item["meta"][0]
+            plat_tag = f" · {platform}" if platform else ""
+            parts.append(f"**{i}. {item['title']}**")
+            parts.append(f"")
+            topics = item["meta"][2]
+            topics_str = "、".join(topics) if topics else "AI动态"
+            parts.append(f"🏷️ `{topics_str}`{plat_tag}  |  📌 来源：{source}")
+            parts.append(f"")
+            parts.append(f"📎 [查看原文]({item['url']})")
+            parts.append("")
 
-            if is_tb:
-                # 淘系内容详细展开
-                news_section += (
-                    f"**{i}. {item['title']}**  \n"
-                    f"来源：{source} | 类别：{cats}\n\n"
-                    f"📝 **核心要点：**\n"
-                    f"- 此为淘系平台相关重要动态\n"
-                    f"- 建议及时关注并评估对店铺运营的影响\n\n"
-                    f"📎 [查看原文]({item['url']})\n\n"
-                )
-            else:
-                # 其他内容简写
-                news_section += (
-                    f"**{i}. {item['title']}**  \n"
-                    f"来源：{source} | {desc}  \n"
-                    f"📎 [查看原文]({item['url']})\n\n"
-                )
-        news_section += "---\n"
+    # 第三层：其他平台
+    for plat in platform_order:
+        items = layers["platform"].get(plat, [])
+        if not items:
+            continue
+        parts.append(f"\n### 📢 {plat}")
+        parts.append("")
+        for item in items[:5]:  # 每个平台最多5条
+            source = item["source"]
+            parts.append(f"- [{item['title']}]({item['url']})  _{source}_")
+        parts.append("")
 
-    # 关键词总结
+    # 第四层：行业专题
+    topic_order = ["规则与政策", "组织人事", "消费零售", "跨境电商", "电商财税", "行业动态"]
+    for tp in topic_order:
+        items = layers["topic"].get(tp, [])
+        if not items:
+            continue
+        parts.append(f"\n### 📋 {tp}")
+        parts.append("")
+        for item in items[:5]:
+            source = item["source"]
+            parts.append(f"- [{item['title']}]({item['url']})  _{source}_")
+        parts.append("")
+
+    # 关键词云
     all_tags = []
     for item in news_list:
         all_tags.extend(item.get("tags", []))
-    # 统计高频标签
     tag_count = {}
     for t in all_tags:
         tl = t.lower()
         tag_count[tl] = tag_count.get(tl, 0) + 1
-    top_tags = sorted(tag_count.items(), key=lambda x: x[1], reverse=True)[:10]
-    keyword_section = "\n\n### 🔑 今日关键词\n\n"
-    keyword_section += "、".join([f"`{tag}`" for tag, _ in top_tags])
+    top_tags = sorted(tag_count.items(), key=lambda x: x[1], reverse=True)[:12]
+    if top_tags:
+        parts.append("\n### 🔑 关键词")
+        parts.append("")
+        parts.append("  ".join([f"`{tag}`" for tag, _ in top_tags]))
 
-    # 组合
-    if not news_list:
-        content = f"{header}\n\n> 今日暂未检索到电商资讯\n\n---\n推送时间：{now_time}"
-    else:
-        content = (
-            f"{header}\n\n"
-            f"今日精选 **{len(news_list)}** 条电商行业动态\n"
-            f"---"
-            f"{platform_section}"
-            f"{news_section}"
-            f"{keyword_section}\n\n"
-            f"---\n\n"
-            f"推送时间：{now_time}  \n"
-            f"由 GitHub Actions 自动抓取推送"
-        )
+    # 结尾
+    parts.append("\n---")
+    parts.append(f"推送时间：{now_time}  |  GitHub Actions 自动抓取")
+    parts.append(f"数据来源：亿邦动力 · 电商派 · DoNews · 钛媒体")
+
+    content = "\n".join(parts)
 
     return {
         "msgtype": "markdown",
         "markdown": {
-            "title": f"电商资讯早报 | {today}",
+            "title": f"电商早报 | {today}",
             "text": content,
         },
     }
 
 
 # ============================================================
-# 钉钉发送模块
+# 钉钉发送
 # ============================================================
 
 def get_dingtalk_url():
-    """生成带签名的钉钉 Webhook URL"""
     url = DINGTALK_WEBHOOK
     if not DINGTALK_SECRET:
         return url
-
-    import hashlib
-    import hmac
-    import base64
-    import urllib.parse
-
+    import hashlib, hmac, base64, urllib.parse
     timestamp = str(int(datetime.now().timestamp() * 1000))
     string_to_sign = f"{timestamp}\n{DINGTALK_SECRET}"
     hmac_code = hmac.new(
@@ -509,30 +477,43 @@ def get_dingtalk_url():
     return f"{url}&timestamp={timestamp}&sign={sign}"
 
 
-def send_to_dingtalk(message):
-    """发送消息到钉钉群"""
+def send_dingtalk(message):
     if not DINGTALK_WEBHOOK:
-        print("[WARN] 未配置 DINGTALK_WEBHOOK，跳过发送")
+        print("[WARN] 未配置 DINGTALK_WEBHOOK")
         return False
-
     try:
         url = get_dingtalk_url()
-        resp = requests.post(
-            url,
-            headers={"Content-Type": "application/json"},
-            data=json.dumps(message, ensure_ascii=False),
-            timeout=10,
-        )
+        resp = requests.post(url, headers={"Content-Type": "application/json"},
+                           data=json.dumps(message, ensure_ascii=False), timeout=10)
         result = resp.json()
         if result.get("errcode") == 0:
-            print("[OK] 钉钉消息发送成功!")
+            print("[OK] 钉钉推送成功!")
             return True
         else:
-            print(f"[ERROR] 钉钉返回错误: {result.get('errmsg')} (errcode={result.get('errcode')})")
+            print(f"[ERR] 钉钉错误: {result.get('errmsg')}")
             return False
     except Exception as e:
-        print(f"[ERROR] 钉钉发送异常: {e}")
+        print(f"[ERR] 钉钉异常: {e}")
         return False
+
+
+# ============================================================
+# 记忆条目格式化
+# ============================================================
+
+def format_memory_entry(news_list):
+    today = datetime.now().strftime("%Y-%m-%d")
+    lines = [f"## {today}", ""]
+    for item in news_list:
+        tags_str = ", ".join(f"'{t}'" for t in item.get("tags", []))
+        cats_str = ", ".join(item["meta"][2]) if item["meta"][2] else "general"
+        plat = item["meta"][0] or "none"
+        lines.append(f"- {item['title']}")
+        lines.append(f"  - tags: [{tags_str}]")
+        lines.append(f"  - platform: {plat}")
+        lines.append(f"  - topics: [{cats_str}]")
+        lines.append("")
+    return "\n".join(lines)
 
 
 # ============================================================
@@ -540,64 +521,58 @@ def send_to_dingtalk(message):
 # ============================================================
 
 def main():
-    print("=" * 60)
-    print("  电商资讯早报 - 智能抓取·去重·分类推送系统")
-    print("=" * 60)
+    print("=" * 50)
+    print("  电商资讯早报 v2.0 - 精准分类·分层推送")
+    print("=" * 50)
 
-    # Step 0: 读取历史记忆
-    print("\n[Step 0] 读取历史推送记录...")
-    memory_content = load_memory_content_local()
-    if memory_content:
-        print("  已加载本地历史记忆文件")
-    else:
-        print("  无历史记忆文件，首次运行")
+    # Step 0: 加载历史
+    print("\n[0] 加载历史记录...")
+    pushed_tags = load_pushed_tags()
+    memory_content = load_memory_content()
+    print(f"  已有标签: {len(pushed_tags)} 个")
 
-    pushed_tags = load_pushed_tags_from_local()
-    print(f"  近7天已推送标签: {len(pushed_tags)} 个")
+    # Step 1: 抓取
+    print("\n[1] 抓取资讯...")
+    raw = fetch_all()
 
-    # Step 1: 抓取今日资讯
-    print("\n[Step 1] 检索今日电商资讯...")
-    raw_news = fetch_all_news()
+    # Step 2: 分类 + 去重
+    print("\n[2] 智能分类与去重...")
+    final = []
+    for item in raw:
+        platform, is_ai, topics, priority = classify_item(item["title"])
+        item["meta"] = (platform, is_ai, topics, priority)
+        item["tags"] = extract_tags(item["title"])
 
-    # Step 2: 分类、标签、去重
-    print("\n[Step 2] 分类、标签、去重...")
-    final_news = []
-    for item in raw_news:
-        categories, tags, is_platform = classify_and_tag(item)
-        item["categories"] = categories
-        item["tags"] = tags
-        item["is_platform"] = is_platform
-
-        # 去重检查
-        if check_duplicate(tags, pushed_tags):
-            print(f"  [SKIP] 重复: {item['title'][:30]}...")
+        if is_duplicate(item["tags"], pushed_tags):
+            print(f"  [SKIP] {item['title'][:25]}...")
             continue
+        final.append(item)
 
-        final_news.append(item)
+    # 统计
+    taobao_count = sum(1 for i in final if i["meta"][0] == "淘系")
+    ai_count = sum(1 for i in final if i["meta"][1])
+    other_plat = set(i["meta"][0] for i in final if i["meta"][0] and i["meta"][0] != "淘系")
+    print(f"  最终: {len(final)} 条（淘系 {taobao_count} | AI相关 {ai_count} | 其他平台 {len(other_plat)}个）")
 
-    print(f"  最终待推送: {len(final_news)} 条（去重后）")
+    # Step 3: 发送
+    if final:
+        print("\n[3] 格式化推送...")
+        msg = format_message(final)
+        send_dingtalk(msg)
 
-    # Step 3: 格式化并发送
-    if final_news:
-        print("\n[Step 3] 格式化并发送到钉钉...")
-        message = format_dingtalk_message(final_news)
-        send_to_dingtalk(message)
-
-        # Step 4: 保存历史记忆
-        print("\n[Step 4] 更新历史推送记录...")
-        new_entry = format_memory_entry(final_news)
+        # Step 4: 保存记忆
+        print("\n[4] 更新历史...")
+        entry = format_memory_entry(final)
         if memory_content:
-            updated_memory = new_entry + "\n---\n\n" + memory_content
+            updated = entry + "\n---\n\n" + memory_content
         else:
-            updated_memory = "# 电商资讯推送历史记录\n\n" + new_entry + "\n"
-        save_memory_local(updated_memory)
+            updated = "# 电商资讯推送历史\n\n" + entry + "\n"
+        save_memory(updated)
         git_commit_and_push()
     else:
-        print("\n[INFO] 今日无新资讯可推送（全部重复或无内容）")
+        print("\n[INFO] 无新资讯")
 
-    print("\n" + "=" * 60)
-    print("  执行完毕")
-    print("=" * 60)
+    print("\n" + "=" * 50)
     return 0
 
 
