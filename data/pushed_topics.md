@@ -1,5 +1,309 @@
 ## 2026-04-20
 
+- Shopee菲律宾本土店要求卖家提供完整保固信息
+  - tags: ['Shopee', '菲律宾本土店要求卖家提供完整保固信息']
+  - platform: none
+  - topics: [跨境电商]
+
+- Wildberries平台优化“买家退货”板块 提升卖家处理效率
+  - tags: ['Wildberries', '平台优化', '买家退货', '板块', '提升卖家处理效率']
+  - platform: none
+  - topics: [组织人事]
+
+- 追觅科技连续8年保持平均100%营收增长 超30国市占第一
+  - tags: ['追觅科技连续', '年保持平均', '营收增长', '国市占第一']
+  - platform: none
+  - topics: [general]
+
+- 俞浩：中国拥有世界上最强的创业者
+  - tags: ['俞浩', '中国拥有世界上最强的创业者']
+  - platform: none
+  - topics: [general]
+
+- 去年字节跳动全年净利润同比下降超过70% 加码AI投入所致
+  - tags: ['去年字节跳动全年净利润同比下降超过', '加码', 'AI', '投入所致']
+  - platform: 抖音
+  - topics: [general]
+
+- 亚马逊在美墨边境新建配送中心以提升跨境物流效率
+  - tags: ['亚马逊在美墨边境新建配送中心以提升跨境物流效率']
+  - platform: none
+  - topics: [跨境电商]
+
+- TikTok Shop东南亚跨境更新合规要求：世界杯周边商品需品牌授权
+  - tags: ['TikTok Shop', '东南亚跨境更新合规要求', '世界杯周边商品需品牌授权']
+  - platform: 抖音
+  - topics: [跨境电商, 规则与政策, 消费零售]
+
+- UPS在美国小包裹网络全面部署RFID技术 实现实时包裹感知
+  - tags: ['UPS', '在美国小包裹网络全面部署', 'RFID', '技术', '实现实时包裹感知']
+  - platform: none
+  - topics: [general]
+
+- Shopee马来西亚跨境店将于4月20日起优化罚分申诉机制
+  - tags: ['Shopee', '马来西亚跨境店将于', '日起优化罚分申诉机制']
+  - platform: none
+  - topics: [跨境电商, 组织人事]
+
+- Renassance Insurance Group：超三分之一俄罗斯人因减肥增加额外消费
+  - tags: ['Renassance Insurance Group', '超三分之一俄罗斯人因减肥增加额外消费']
+  - platform: none
+  - topics: [消费零售]
+
+- 家得宝加速数字化与供应链优化布局
+  - tags: ['家得宝加速数字化与供应链优化布局']
+  - platform: none
+  - topics: [组织人事, 消费零售]
+
+- 巴西支付巨头Ebanx加速东南亚布局 拓展至多国市场
+  - tags: ['巴西支付巨头', 'Ebanx', '加速东南亚布局', '拓展至多国市场']
+  - platform: none
+  - topics: [general]
+
+- NIQ2026年全球家电市场趋势：消费者更关注实用与性价比 智能化非首要
+  - tags: ['NIQ', '年全球家电市场趋势', '消费者更关注实用与性价比', '智能化非首要']
+  - platform: none
+  - topics: [消费零售]
+
+- 沃尔玛中国试点“店仓一体”业务提升本地配送效率
+  - tags: ['沃尔玛中国试点', '店仓一体', '业务提升本地配送效率']
+  - platform: none
+  - topics: [general]
+
+- 飞猪AI开放平台上线
+  - tags: ['飞猪', 'AI', '开放平台上线']
+  - platform: none
+  - topics: [general]
+
+- 同程旅行：五一旅行产品搜索热度月环比上涨364%
+  - tags: ['同程旅行', '五一旅行产品搜索热度月环比上涨']
+  - platform: none
+  - topics: [general]
+
+- 小红书在上海成立红擎创科技新公司
+  - tags: ['小红书在上海成立红擎创科技新公司']
+  - platform: 小红书
+  - topics: [general]
+
+- 文章在面馆端菜，对自己太狠了
+  - tags: ['文章在面馆端菜', '对自己太狠了']
+  - platform: none
+  - topics: [general]
+
+- 马云对机器人下手了
+  - tags: ['马云对机器人下手了']
+  - platform: none
+  - topics: [general]
+
+- 刘强东数字人惊艳亮相，炸翻全网
+  - tags: ['刘强东数字人惊艳亮相', '炸翻全网']
+  - platform: none
+  - topics: [general]
+
+- 抖音天价挖人大反转，薪资内幕彻底曝光
+  - tags: ['抖音天价挖人大反转', '薪资内幕彻底曝光']
+  - platform: 抖音
+  - topics: [general]
+
+- 快手震怒，大批网红被永久封杀
+  - tags: ['快手震怒', '大批网红被永久封杀']
+  - platform: 快手
+  - topics: [general]
+
+- 消息称字节跳动2025年净利润下滑超70%
+  - tags: ['消息称字节跳动', '年净利润下滑超']
+  - platform: 抖音
+  - topics: [general]
+
+- 1688霍尔果斯样品中心投入运营
+  - tags: ['霍尔果斯样品中心投入运营']
+  - platform: 淘系
+  - topics: [general]
+
+- 智能派完成数亿元B+轮融资 美团、高瓴等联合投资
+  - tags: ['智能派完成数亿元', '轮融资', '美团', '高瓴等联合投资']
+  - platform: none
+  - topics: [general]
+
+- Ozon Global调研：超七成俄买家认可中国商品质量改善，近六成预计增购
+  - tags: ['Ozon Global', '调研', '超七成俄买家认可中国商品质量改善', '近六成预计增购']
+  - platform: none
+  - topics: [general]
+
+- 自变量机器人完成近20亿元B轮融资 小米战投、红杉中国领投
+  - tags: ['自变量机器人完成近', '亿元', '轮融资', '小米战投', '红杉中国领投']
+  - platform: none
+  - topics: [general]
+
+- 小马智行已在迪拜开启无人化Robotaxi测试
+  - tags: ['小马智行已在迪拜开启无人化', 'Robotaxi', '测试']
+  - platform: none
+  - topics: [general]
+
+- 山姆会员超市的爆款冰淇淋，是蒂兰圣雪联名Peet’s的一杯零下18度的冰咖啡
+  - tags: ['山姆会员超市的爆款冰淇淋', '是蒂兰圣雪联名', 'Peet', '的一杯零下', '度的冰咖啡']
+  - platform: none
+  - topics: [general]
+
+- 京东五金城独家包销博世爆款角磨机 打造行业超级单品
+  - tags: ['京东五金城独家包销博世爆款角磨机', '打造行业超级单品']
+  - platform: 京东
+  - topics: [general]
+
+- 京东超6亿元在杭州拿地 建设浙江区域总部
+  - tags: ['京东超', '亿元在杭州拿地', '建设浙江区域总部']
+  - platform: 京东
+  - topics: [general]
+
+- 国联股份CNAUTO推出轮胎全生命周期租赁服务
+  - tags: ['国联股份', 'CNAUTO', '推出轮胎全生命周期租赁服务']
+  - platform: none
+  - topics: [general]
+
+- 美团游戏上线“攻略交流广场”
+  - tags: ['美团游戏上线', '攻略交流广场']
+  - platform: none
+  - topics: [general]
+
+- 京东广州花都智能产业园二期正式动工
+  - tags: ['京东广州花都智能产业园二期正式动工']
+  - platform: 京东
+  - topics: [general]
+
+- 买五金上京东 京东金榜首发工业超级单品榜单
+  - tags: ['买五金上京东', '京东金榜首发工业超级单品榜单']
+  - platform: 京东
+  - topics: [general]
+
+- 极兔巴西与湖北大学达成战略合作伙伴关系
+  - tags: ['极兔巴西与湖北大学达成战略合作伙伴关系']
+  - platform: none
+  - topics: [general]
+
+- 宁德时代曾毓群身价暴涨，离首富只差一步之遥
+  - tags: ['宁德时代曾毓群身价暴涨', '离首富只差一步之遥']
+  - platform: none
+  - topics: [general]
+
+- 张雪峰接班人自曝猛料，让人不安
+  - tags: ['张雪峰接班人自曝猛料', '让人不安']
+  - platform: none
+  - topics: [general]
+
+- 小米徐洁云回应“雷军被堵车里维权”
+  - tags: ['小米徐洁云回应', '雷军被堵车里维权']
+  - platform: none
+  - topics: [general]
+
+- 千万网红留几手杀回来了，大骂网友是蠢货
+  - tags: ['千万网红留几手杀回来了', '大骂网友是蠢货']
+  - platform: none
+  - topics: [general]
+
+- 蚂蚁灵光 App 推出全新功能“灵光圈”
+  - tags: ['蚂蚁灵光', 'App', '推出全新功能', '灵光圈']
+  - platform: none
+  - topics: [general]
+
+- 格力回应与海信“真铜实料”争端：网传铝线电机并非家用机型
+  - tags: ['格力回应与海信', '真铜实料', '争端', '网传铝线电机并非家用机型']
+  - platform: none
+  - topics: [general]
+
+- 蚂蚁灵光圈，补上了AI生成应用的最后一块拼图
+  - tags: ['蚂蚁灵光圈', '补上了', 'AI', '生成应用的最后一块拼图']
+  - platform: none
+  - topics: [general]
+
+- 扩大AI投入，字节跳动2025年净利润下滑超70%
+  - tags: ['扩大', 'AI', '投入', '字节跳动', '年净利润下滑超']
+  - platform: 抖音
+  - topics: [general]
+
+- 研发费率仅7.7%，宇树科技王兴兴“省”出了一个IPO
+  - tags: ['研发费率仅', '宇树科技王兴兴', '出了一个', 'IPO']
+  - platform: none
+  - topics: [general]
+
+- 海底捞的“500元困局”：当“家文化”在极致服务的KPI下异化
+  - tags: ['海底捞的', '元困局', '家文化', '在极致服务的', 'KPI', '下异化']
+  - platform: none
+  - topics: [general]
+
+- 昆仑万维的AI生存哲学：榜单上的极客，骨子里的商人
+  - tags: ['昆仑万维的', 'AI', '生存哲学', '榜单上的极客', '骨子里的商人']
+  - platform: none
+  - topics: [general]
+
+- 5亿定调、分账革新：真人短剧坐稳千亿风口基本盘
+  - tags: ['亿定调', '分账革新', '真人短剧坐稳千亿风口基本盘']
+  - platform: none
+  - topics: [general]
+
+- 丽珠集团营收停滞利润转降，健康元“嫡系”总裁上任能否打破创新僵局？
+  - tags: ['丽珠集团营收停滞利润转降', '健康元', '嫡系', '总裁上任能否打破创新僵局']
+  - platform: none
+  - topics: [组织人事]
+
+- 杨幂代言的背背佳卖爆了，“不差钱”的可孚医疗为何还要赴港 IPO？
+  - tags: ['杨幂代言的背背佳卖爆了', '不差钱', '的可孚医疗为何还要赴港', 'IPO']
+  - platform: none
+  - topics: [general]
+
+- 龙旗旧部打造手机ODM全球第六，易景科技冲刺IPO，79%收入依赖传音
+  - tags: ['龙旗旧部打造手机', 'ODM', '全球第六', '易景科技冲刺', 'IPO', '收入依赖传音']
+  - platform: none
+  - topics: [general]
+
+- 从社区到乡镇，瑞幸与星巴克打起“巷战”
+  - tags: ['从社区到乡镇', '瑞幸与星巴克打起', '巷战']
+  - platform: none
+  - topics: [general]
+
+- 一季报“变脸”市值蒸发200多亿，湖南首富遇业绩坎
+  - tags: ['一季报', '变脸', '市值蒸发', '多亿', '湖南首富遇业绩坎']
+  - platform: none
+  - topics: [general]
+
+- 抖音电商增速放缓，字节准备“榨干”红果
+  - tags: ['抖音电商增速放缓', '字节准备', '榨干', '红果']
+  - platform: 抖音
+  - topics: [general]
+
+- 永辉扭亏，一季度净赚2.87亿！什么信号？
+  - tags: ['永辉扭亏', '一季度净赚', '什么信号']
+  - platform: none
+  - topics: [general]
+
+- 助闽兴闽 共筑数智福建｜华为坤灵中国行2026・福建站圆满举办
+  - tags: ['助闽兴闽', '共筑数智福建', '华为坤灵中国行', '福建站圆满举办']
+  - platform: none
+  - topics: [general]
+
+- 业绩“双增”！海尔周期压力难解，年内市值已蒸发超490亿
+  - tags: ['业绩', '双增', '海尔周期压力难解', '年内市值已蒸发超']
+  - platform: none
+  - topics: [general]
+
+- 新能源车全球普及的历史节点到来了
+  - tags: ['新能源车全球普及的历史节点到来了']
+  - platform: none
+  - topics: [general]
+
+- 杨建允：AI搜索时代文旅品牌营销的策略变革
+  - tags: ['杨建允', 'AI', '搜索时代文旅品牌营销的策略变革']
+  - platform: none
+  - topics: [消费零售]
+
+- 领克第一款 GT 概念跑车官宣：四天后 2026 北京车展见
+  - tags: ['领克第一款', 'GT', '概念跑车官宣', '四天后', '北京车展见']
+  - platform: none
+  - topics: [general]
+
+---
+
+## 2026-04-20
+
 - 阿里国际站在印尼推出贸易保障服务
   - tags: ['阿里国际站在印尼推出贸易保障服务']
   - platform: 淘系
