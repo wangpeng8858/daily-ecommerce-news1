@@ -364,7 +364,7 @@ def format_message(news_list):
 
     # 构建消息
     parts = []
-    parts.append(f"## 📰 电商早报 | {today} {weekday}")
+    parts.append(f"## 📰 电商资讯早报 | {today} {weekday}")
     parts.append(f"\n> 今日精选 **{len(news_list)}** 条行业动态  |  更新时间 {now_time}")
     parts.append("---")
 
@@ -451,7 +451,7 @@ def format_message(news_list):
     return {
         "msgtype": "markdown",
         "markdown": {
-            "title": f"电商早报 | {today}",
+            "title": f"电商资讯 | {today}",
             "text": content,
         },
     }
