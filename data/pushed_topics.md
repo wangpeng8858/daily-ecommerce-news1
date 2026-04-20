@@ -55,6 +55,145 @@
   - platform: 淘系
   - topics: [general]
 
+- 1688霍尔果斯样品中心投入运营
+  - tags: ['霍尔果斯样品中心投入运营']
+  - platform: 淘系
+  - topics: [general]
+
+- 京东健康将在济南布局100家自营药房
+  - tags: ['京东健康将在济南布局', '家自营药房']
+  - platform: 京东
+  - topics: [general]
+
+- 高德公开全球首款开放环境全自主具身机器人
+  - tags: ['高德公开全球首款开放环境全自主具身机器人']
+  - platform: none
+  - topics: [general]
+
+- 2026年3月浙江省物流业景气指数为58.03%
+  - tags: ['月浙江省物流业景气指数为']
+  - platform: none
+  - topics: [general]
+
+- 山东首家沃来采农业服务站将于4月23日开业
+  - tags: ['山东首家沃来采农业服务站将于', '日开业']
+  - platform: none
+  - topics: [general]
+
+- 滴滴：洛阳赏花季带动市内打车需求涨195%
+  - tags: ['滴滴', '洛阳赏花季带动市内打车需求涨']
+  - platform: none
+  - topics: [general]
+
+- 携程集团与斐济旅游局签署战略合作备忘录
+  - tags: ['携程集团与斐济旅游局签署战略合作备忘录']
+  - platform: none
+  - topics: [general]
+
+- 深圳市宝安区跨境电商协会成立 智美科技董事长许春伟当选会长
+  - tags: ['深圳市宝安区跨境电商协会成立', '智美科技董事长许春伟当选会长']
+  - platform: none
+  - topics: [跨境电商, 组织人事]
+
+- 交个朋友智能化选品中心获评浙江省级电商选品中心
+  - tags: ['交个朋友智能化选品中心获评浙江省级电商选品中心']
+  - platform: none
+  - topics: [general]
+
+- 银联商务与大理州、恒丰银行签订合作协议
+  - tags: ['银联商务与大理州', '恒丰银行签订合作协议']
+  - platform: none
+  - topics: [general]
+
+- 京东快递推出樱桃专项惠农方案 新增千个乡村揽收点
+  - tags: ['京东快递推出樱桃专项惠农方案', '新增千个乡村揽收点']
+  - platform: 京东
+  - topics: [general]
+
+- 千万网红留几手杀回来了，大骂网友是蠢货
+  - tags: ['千万网红留几手杀回来了', '大骂网友是蠢货']
+  - platform: none
+  - topics: [general]
+
+- 大佬们扎堆小米园区，雷军太风光了
+  - tags: ['大佬们扎堆小米园区', '雷军太风光了']
+  - platform: none
+  - topics: [general]
+
+- 广汽昊铂 S600 将于北京车展开启盲订
+  - tags: ['广汽昊铂', '将于北京车展开启盲订']
+  - platform: none
+  - topics: [general]
+
+- 云计算市场变天，国内云大厂都在憋什么招？
+  - tags: ['云计算市场变天', '国内云大厂都在憋什么招']
+  - platform: none
+  - topics: [general]
+
+- 前荣耀掌门人赵明转战智能驾驶：千里科技智驾已达行业顶尖
+  - tags: ['前荣耀掌门人赵明转战智能驾驶', '千里科技智驾已达行业顶尖']
+  - platform: none
+  - topics: [general]
+
+---
+
+## 2026-04-20
+
+- 阿里国际站在印尼推出贸易保障服务
+  - tags: ['阿里国际站在印尼推出贸易保障服务']
+  - platform: 淘系
+  - topics: [general]
+
+- Shopee菲律宾本土店商品须完整标注保固信息
+  - tags: ['Shopee', '菲律宾本土店商品须完整标注保固信息']
+  - platform: none
+  - topics: [跨境电商]
+
+- 敦煌网发布足球服限价新规 4月20日起执行
+  - tags: ['敦煌网发布足球服限价新规', '日起执行']
+  - platform: none
+  - topics: [规则与政策]
+
+- 加拿大贸易部长访问中国 与电动车企业洽谈市场准入
+  - tags: ['加拿大贸易部长访问中国', '与电动车企业洽谈市场准入']
+  - platform: none
+  - topics: [规则与政策]
+
+- 敦煌网启动2026世界杯全周期促销及双重招商活动
+  - tags: ['敦煌网启动', '世界杯全周期促销及双重招商活动']
+  - platform: none
+  - topics: [general]
+
+- 抖音天价挖人大反转，薪资内幕彻底曝光
+  - tags: ['抖音天价挖人大反转', '薪资内幕彻底曝光']
+  - platform: 抖音
+  - topics: [general]
+
+- 快手震怒，大批网红被永久封杀
+  - tags: ['快手震怒', '大批网红被永久封杀']
+  - platform: 快手
+  - topics: [general]
+
+- 雷军迎来高光时刻
+  - tags: ['雷军迎来高光时刻']
+  - platform: none
+  - topics: [general]
+
+- 俞敏洪要给董宇辉上一课
+  - tags: ['俞敏洪要给董宇辉上一课']
+  - platform: none
+  - topics: [general]
+
+- 多家跨境公司暴雷，被曝逃税11亿
+  - tags: ['多家跨境公司暴雷', '被曝逃税']
+  - platform: none
+  - topics: [跨境电商, 电商财税]
+
+- 阿里官宣首款具身机器人“高德途途”
+  - tags: ['阿里官宣首款具身机器人', '高德途途']
+  - platform: 淘系
+  - topics: [general]
+
 - 钉钉CEO陈航：软件时代已彻底终结
   - tags: ['钉钉', 'CEO', '陈航', '软件时代已彻底终结']
   - platform: none
