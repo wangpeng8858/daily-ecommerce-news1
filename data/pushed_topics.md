@@ -1,3 +1,327 @@
+## 2026-04-21
+
+- 劳尼克斯完成新一轮融资 加码高端锂电园林工具研发与海外拓展
+  - tags: ['劳尼克斯完成新一轮融资', '加码高端锂电园林工具研发与海外拓展']
+  - platform: none
+  - topics: [跨境电商]
+
+- 敦煌网将于4月22日推出商家端“货盘运营专区”模块
+  - tags: ['敦煌网将于', '日推出商家端', '货盘运营专区', '模块']
+  - platform: none
+  - topics: [general]
+
+- 盒马在东莞成立网络科技新公司 注册资本1000万元
+  - tags: ['盒马在东莞成立网络科技新公司', '注册资本', '万元']
+  - platform: 淘系
+  - topics: [general]
+
+- 亚马逊MCF Shopify应用拓展至欧洲多国、日本及加拿大
+  - tags: ['亚马逊', 'MCF Shopify', '应用拓展至欧洲多国', '日本及加拿大']
+  - platform: none
+  - topics: [跨境电商]
+
+- 阿里申请“千问小酒窝”商标
+  - tags: ['阿里申请', '千问小酒窝', '商标']
+  - platform: 淘系
+  - topics: [general]
+
+- 抖音集团发布3月真人短剧分账报告
+  - tags: ['抖音集团发布', '月真人短剧分账报告']
+  - platform: 抖音
+  - topics: [general]
+
+- 《淘宝安装服务管理规范》将变更
+  - tags: ['淘宝安装服务管理规范', '将变更']
+  - platform: 淘系
+  - topics: [general]
+
+- 京东物流：近一周湖北恩施地区春茶寄递单量环比增长55%
+  - tags: ['京东物流', '近一周湖北恩施地区春茶寄递单量环比增长']
+  - platform: 京东
+  - topics: [general]
+
+- 永辉超市张轩松：2026将继续深耕自有品牌“品质永辉”业务
+  - tags: ['永辉超市张轩松', '将继续深耕自有品牌', '品质永辉', '业务']
+  - platform: none
+  - topics: [消费零售]
+
+- 永辉超市：大规模闭店已经结束
+  - tags: ['永辉超市', '大规模闭店已经结束']
+  - platform: none
+  - topics: [general]
+
+- 华南首家美团线下自营超市“快乐猴”在广州番禺大石开业
+  - tags: ['华南首家美团线下自营超市', '快乐猴', '在广州番禺大石开业']
+  - platform: none
+  - topics: [general]
+
+- 越南拟将电动汽车特别消费税减免政策延长至2030年底
+  - tags: ['越南拟将电动汽车特别消费税减免政策延长至', '年底']
+  - platform: none
+  - topics: [规则与政策, 消费零售]
+
+- 美国对华关税或再降10% 贸易法院质疑特朗普政府法律依据
+  - tags: ['美国对华关税或再降', '贸易法院质疑特朗普政府法律依据']
+  - platform: none
+  - topics: [电商财税]
+
+- Shopee印尼启动reKYC身份复核 逾期将冻结钱包
+  - tags: ['Shopee', '印尼启动', 'reKYC', '身份复核', '逾期将冻结钱包']
+  - platform: none
+  - topics: [跨境电商]
+
+- 越南5月起优化外贸流程 原产地证明与多层营销监管同步改革
+  - tags: ['越南', '月起优化外贸流程', '原产地证明与多层营销监管同步改革']
+  - platform: none
+  - topics: [跨境电商, 规则与政策, 组织人事]
+
+- BeautyMatter2026年Q1亚马逊美妆榜单揭晓：护肤品占主导 Medicube登顶
+  - tags: ['BeautyMatter', '亚马逊美妆榜单揭晓', '护肤品占主导', 'Medicube', '登顶']
+  - platform: none
+  - topics: [跨境电商]
+
+- TikTok Shop东南亚跨境将加强低质内容管控
+  - tags: ['TikTok Shop', '东南亚跨境将加强低质内容管控']
+  - platform: 抖音
+  - topics: [跨境电商]
+
+- 海南“十五五”规划拟扩大岛内居民免税购物种类 推动免税品通过跨境电商“出海”
+  - tags: ['海南', '十五五', '规划拟扩大岛内居民免税购物种类', '推动免税品通过跨境电商', '出海']
+  - platform: none
+  - topics: [跨境电商]
+
+- 5月6日起调整 Shopee马来西亚站点专项分期付款交易手续费费率更新
+  - tags: ['日起调整', 'Shopee', '马来西亚站点专项分期付款交易手续费费率更新']
+  - platform: none
+  - topics: [跨境电商]
+
+- Meta增强Threads API功能 助力品牌高效管理内容与互动
+  - tags: ['Meta', '增强', 'Threads API', '功能', '助力品牌高效管理内容与互动']
+  - platform: none
+  - topics: [消费零售]
+
+- 多家电商平台集体被重罚，内幕触目惊心
+  - tags: ['多家电商平台集体被重罚', '内幕触目惊心']
+  - platform: none
+  - topics: [general]
+
+- 大反转，字节跳动利润暴跌，最新回应
+  - tags: ['大反转', '字节跳动利润暴跌', '最新回应']
+  - platform: 抖音
+  - topics: [general]
+
+- 宗馥莉连开三家新公司，准备大干一场
+  - tags: ['宗馥莉连开三家新公司', '准备大干一场']
+  - platform: none
+  - topics: [general]
+
+- 刘强东疯狂砸钱买地，要干一票大的
+  - tags: ['刘强东疯狂砸钱买地', '要干一票大的']
+  - platform: none
+  - topics: [general]
+
+- 雷军被造谣陷害，全网震怒
+  - tags: ['雷军被造谣陷害', '全网震怒']
+  - platform: none
+  - topics: [general]
+
+- 库克宣布卸任苹果CEO 特努斯接任
+  - tags: ['库克宣布卸任苹果', 'CEO', '特努斯接任']
+  - platform: none
+  - topics: [组织人事]
+
+- 京东超6亿元在杭州拿地
+  - tags: ['京东超', '亿元在杭州拿地']
+  - platform: 京东
+  - topics: [general]
+
+- 字节回应去年净利润下滑超70%
+  - tags: ['字节回应去年净利润下滑超']
+  - platform: 抖音
+  - topics: [general]
+
+- 小米徐洁云回应“雷军被堵车里维权”
+  - tags: ['小米徐洁云回应', '雷军被堵车里维权']
+  - platform: none
+  - topics: [general]
+
+- 九州通医疗器械集团与碧迪医疗签订战略合作协议
+  - tags: ['九州通医疗器械集团与碧迪医疗签订战略合作协议']
+  - platform: none
+  - topics: [general]
+
+- 天猫超市发布AI超市智能体“超喵1.0”
+  - tags: ['天猫超市发布', 'AI', '超市智能体', '超喵']
+  - platform: 淘系
+  - topics: [general]
+
+- 聚焦成分科技，抖音电商亮相消博会解码行业趋势
+  - tags: ['聚焦成分科技', '抖音电商亮相消博会解码行业趋势']
+  - platform: 抖音
+  - topics: [general]
+
+- 小米龙虾miclaw开启PC、Mac和有屏音箱版封测
+  - tags: ['小米龙虾', 'miclaw', '开启', 'PC', 'Mac', '和有屏音箱版封测']
+  - platform: none
+  - topics: [general]
+
+- 飞猪：五一出境游商品预订量同比增长50%
+  - tags: ['飞猪', '五一出境游商品预订量同比增长']
+  - platform: none
+  - topics: [general]
+
+- 京东厨具系列私享会成功落地 公布2026规划共推细分品类战略升级
+  - tags: ['京东厨具系列私享会成功落地', '公布', '规划共推细分品类战略升级']
+  - platform: 京东
+  - topics: [general]
+
+- 云途物流推出跨境头程新品牌“云途货运”
+  - tags: ['云途物流推出跨境头程新品牌', '云途货运']
+  - platform: none
+  - topics: [跨境电商, 消费零售]
+
+- 抖音下狠手，一大批AI短剧要凉了
+  - tags: ['抖音下狠手', '一大批', 'AI', '短剧要凉了']
+  - platform: 抖音
+  - topics: [general]
+
+- 中国银联与浦发银行签署全面战略合作协议
+  - tags: ['中国银联与浦发银行签署全面战略合作协议']
+  - platform: none
+  - topics: [general]
+
+- 滴滴正式签约成为香港引进办重点企业
+  - tags: ['滴滴正式签约成为香港引进办重点企业']
+  - platform: none
+  - topics: [general]
+
+- 出海匠将于2026年4月23日举行AI Agent新版线上发布会
+  - tags: ['出海匠将于', '日举行', 'AI Agent', '新版线上发布会']
+  - platform: none
+  - topics: [跨境电商]
+
+- 亚马逊将向Anthropic追加至多250亿美元投资
+  - tags: ['亚马逊将向', 'Anthropic', '追加至多', '亿美元投资']
+  - platform: none
+  - topics: [跨境电商]
+
+- 平价 AI 眼镜在 TikTok 爆火，卖家一周入账160万
+  - tags: ['平价', 'AI', '眼镜在', 'TikTok', '爆火', '卖家一周入账']
+  - platform: 抖音
+  - topics: [general]
+
+- 彻底凉凉！义乌货代资金断裂，无力回天
+  - tags: ['彻底凉凉', '义乌货代资金断裂', '无力回天']
+  - platform: none
+  - topics: [general]
+
+- 张雪峰接班人自曝猛料，让人不安
+  - tags: ['张雪峰接班人自曝猛料', '让人不安']
+  - platform: none
+  - topics: [general]
+
+- 比亚迪方程豹全新系列 FORMULA 官宣北京车展发布
+  - tags: ['比亚迪方程豹全新系列', 'FORMULA', '官宣北京车展发布']
+  - platform: none
+  - topics: [general]
+
+- QuestMobile2026Q1 AI应用洞察：豆包、千问、DeepSeek月活分别达到3.4亿、1.7亿
+  - tags: ['QuestMobile', 'AI', '应用洞察', '豆包', '千问', 'DeepSeek']
+  - platform: none
+  - topics: [general]
+
+- 因拒交财务数据，苹果在印度面临 380 亿美元全球最大反垄断罚单
+  - tags: ['因拒交财务数据', '苹果在印度面临', '亿美元全球最大反垄断罚单']
+  - platform: none
+  - topics: [规则与政策]
+
+- 劲旅锐评：同程旅行2025，靠度假业务拉动更多增长
+  - tags: ['劲旅锐评', '同程旅行', '靠度假业务拉动更多增长']
+  - platform: none
+  - topics: [general]
+
+- 我，H-1B 难民，输不起的美国求职战
+  - tags: ['难民', '输不起的美国求职战']
+  - platform: none
+  - topics: [general]
+
+- 库克保留了“复出权”
+  - tags: ['库克保留了', '复出权']
+  - platform: none
+  - topics: [general]
+
+- 金种子酒五年亏约8亿，华润走向幕后，董事长谢金明下场抓经营
+  - tags: ['金种子酒五年亏约', '华润走向幕后', '董事长谢金明下场抓经营']
+  - platform: none
+  - topics: [组织人事]
+
+- 第一部AI长剧爆款，还有多远？
+  - tags: ['第一部', 'AI', '长剧爆款', '还有多远']
+  - platform: none
+  - topics: [general]
+
+- 加盟商优先，跌入谷底的霸王茶姬终于醒悟了
+  - tags: ['加盟商优先', '跌入谷底的霸王茶姬终于醒悟了']
+  - platform: none
+  - topics: [general]
+
+- TOP TOY的招股书，写满了叶国富的急迫
+  - tags: ['TOP TOY', '的招股书', '写满了叶国富的急迫']
+  - platform: none
+  - topics: [general]
+
+- 从ABot-M0具身模型到高德四足机器狗，姗姗来迟的阿里不想“掉队”
+  - tags: ['ABot', '具身模型到高德四足机器狗', '姗姗来迟的阿里不想', '掉队']
+  - platform: 淘系
+  - topics: [general]
+
+- Claude 进了 Word，但“修订模式”不是新发明
+  - tags: ['Claude', '进了', 'Word', '修订模式', '不是新发明']
+  - platform: none
+  - topics: [general]
+
+- 从“蹒跚学步”到“超越人类”，这届半马看点何在？
+  - tags: ['蹒跚学步', '超越人类', '这届半马看点何在']
+  - platform: none
+  - topics: [general]
+
+- 拆解群核：一年只卖520万的AI故事，凭什么值636亿？
+  - tags: ['拆解群核', '一年只卖', '万的', 'AI', '故事', '凭什么值']
+  - platform: none
+  - topics: [general]
+
+- 梁文锋罕见“松口”，680亿DeepSeek也“缺钱”了？
+  - tags: ['梁文锋罕见', '松口', 'DeepSeek', '缺钱']
+  - platform: none
+  - topics: [general]
+
+- “赏罚分明”的李想，给员工年终奖“砍一刀”
+  - tags: ['赏罚分明', '的李想', '给员工年终奖', '砍一刀']
+  - platform: none
+  - topics: [general]
+
+- 海康威视重回两年高点：再不好的生意模式，也能逆风翻盘
+  - tags: ['海康威视重回两年高点', '再不好的生意模式', '也能逆风翻盘']
+  - platform: none
+  - topics: [general]
+
+- 600亿游戏巨头巨人网络，一季度业绩爆了
+  - tags: ['亿游戏巨头巨人网络', '一季度业绩爆了']
+  - platform: none
+  - topics: [general]
+
+- 全球市占率第一却连亏三年，引航生物困在“越卖越亏”里
+  - tags: ['全球市占率第一却连亏三年', '引航生物困在', '越卖越亏']
+  - platform: none
+  - topics: [general]
+
+- 苹果库克内部信称赞接棒者特努斯品格高尚且有远见
+  - tags: ['苹果库克内部信称赞接棒者特努斯品格高尚且有远见']
+  - platform: none
+  - topics: [general]
+
+---
+
 ## 2026-04-20
 
 - Shopee菲律宾本土店要求卖家提供完整保固信息
