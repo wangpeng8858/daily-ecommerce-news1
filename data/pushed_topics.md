@@ -1,3 +1,322 @@
+## 2026-04-22
+
+- 阿里发布数字人“千问小酒窝” 给大模型安了一张甜妹脸
+  - tags: ['阿里发布数字人', '千问小酒窝', '给大模型安了一张甜妹脸']
+  - platform: 淘系
+  - topics: [general]
+
+- 大白兔奶茶首店落户上海
+  - tags: ['大白兔奶茶首店落户上海']
+  - platform: none
+  - topics: [general]
+
+- 星巴克中国辟谣开放加盟：不实信息
+  - tags: ['星巴克中国辟谣开放加盟', '不实信息']
+  - platform: none
+  - topics: [general]
+
+- 俄罗斯税务监控升级 年非现金收入超240万卢布者2027年起将被自动监控
+  - tags: ['俄罗斯税务监控升级', '年非现金收入超', '万卢布者', '年起将被自动监控']
+  - platform: none
+  - topics: [电商财税]
+
+- 快手618商家大会于杭州启动 全年投入千亿流量扶持优质供给
+  - tags: ['快手', '商家大会于杭州启动', '全年投入千亿流量扶持优质供给']
+  - platform: 快手
+  - topics: [general]
+
+- Lululemon在墨西哥推出官方网店并计划年内新增8家门店
+  - tags: ['Lululemon', '在墨西哥推出官方网店并计划年内新增', '家门店']
+  - platform: none
+  - topics: [消费零售]
+
+- 越南出台新规统一HS编码 9月1日生效
+  - tags: ['越南出台新规统一', 'HS', '编码', '日生效']
+  - platform: none
+  - topics: [规则与政策]
+
+- 俄海关SPOT系统4月试运行 7月起全面强制实施
+  - tags: ['俄海关', 'SPOT', '系统', '月试运行', '月起全面强制实施']
+  - platform: none
+  - topics: [general]
+
+- 英国零售巨头Argos推出第三方平台 招募中国卖家
+  - tags: ['英国零售巨头', 'Argos', '推出第三方平台', '招募中国卖家']
+  - platform: none
+  - topics: [消费零售]
+
+- Momentum Works：印尼官方解读2025年电商增长放缓主因
+  - tags: ['Momentum Works', '印尼官方解读', '年电商增长放缓主因']
+  - platform: none
+  - topics: [general]
+
+- 速卖通加强欧洲履约网络 与DHL、Hermes合作提速德国配送
+  - tags: ['速卖通加强欧洲履约网络', 'DHL', 'Hermes', '合作提速德国配送']
+  - platform: 淘系
+  - topics: [general]
+
+- 美客多金融科技业务强劲增长 预计2025年贡献43%营收 交易额超电商平台四倍
+  - tags: ['美客多金融科技业务强劲增长', '预计', '年贡献', '营收', '交易额超电商平台四倍']
+  - platform: none
+  - topics: [general]
+
+- Wildberries推出自提点负荷预测功能 助力卖家提升履约效率
+  - tags: ['Wildberries', '推出自提点负荷预测功能', '助力卖家提升履约效率']
+  - platform: none
+  - topics: [general]
+
+- M.Video-Eldorado：俄罗斯相机市场一季度增长25% 无反相机成为主导
+  - tags: ['Video', 'Eldorado', '俄罗斯相机市场一季度增长', '无反相机成为主导']
+  - platform: none
+  - topics: [general]
+
+- 亚马逊Alexa+进军墨西哥市场
+  - tags: ['亚马逊', 'Alexa', '进军墨西哥市场']
+  - platform: none
+  - topics: [跨境电商]
+
+- 淘宝闪购调整非餐商品发布要求
+  - tags: ['淘宝闪购调整非餐商品发布要求']
+  - platform: 淘系
+  - topics: [general]
+
+- 高鑫零售发盈警：预计2026财年净亏损3亿-3.5亿元
+  - tags: ['高鑫零售发盈警', '预计', '财年净亏损', '亿元']
+  - platform: none
+  - topics: [消费零售]
+
+- Thunes在新西兰推出实时支付服务
+  - tags: ['Thunes', '在新西兰推出实时支付服务']
+  - platform: none
+  - topics: [general]
+
+- 俞敏洪突然出手，狠狠打脸董宇辉
+  - tags: ['俞敏洪突然出手', '狠狠打脸董宇辉']
+  - platform: none
+  - topics: [general]
+
+- 京东、抖音集体出手，疯狂买地建楼
+  - tags: ['京东', '抖音集体出手', '疯狂买地建楼']
+  - platform: 抖音
+  - topics: [general]
+
+- 刘强东最新股权曝光，真是老谋深算
+  - tags: ['刘强东最新股权曝光', '真是老谋深算']
+  - platform: none
+  - topics: [general]
+
+- 韩国电商集体失守，开始疯狂自救
+  - tags: ['韩国电商集体失守', '开始疯狂自救']
+  - platform: none
+  - topics: [general]
+
+- 全网审判！爱奇艺CEO彻底慌了
+  - tags: ['全网审判', '爱奇艺', 'CEO', '彻底慌了']
+  - platform: none
+  - topics: [组织人事]
+
+- 阿里发布生态级AI数字人“千问小酒窝”
+  - tags: ['阿里发布生态级', 'AI', '数字人', '千问小酒窝']
+  - platform: 淘系
+  - topics: [general]
+
+- 京东上线内外贸一体化综合服务平台
+  - tags: ['京东上线内外贸一体化综合服务平台']
+  - platform: 京东
+  - topics: [跨境电商]
+
+- 滴滴成为香港引进办重点企业
+  - tags: ['滴滴成为香港引进办重点企业']
+  - platform: none
+  - topics: [general]
+
+- 万达电影更名，王健林的时代落幕
+  - tags: ['万达电影更名', '王健林的时代落幕']
+  - platform: none
+  - topics: [general]
+
+- Zalando保加利亚站点预计8月1日上线
+  - tags: ['Zalando', '保加利亚站点预计', '日上线']
+  - platform: none
+  - topics: [general]
+
+- AI重塑跨境电商流量入口，SHOPLINE发力GEO与Agentic Commerce布局
+  - tags: ['AI', '重塑跨境电商流量入口', 'SHOPLINE', '发力', 'GEO', 'Agentic Commerce']
+  - platform: none
+  - topics: [跨境电商]
+
+- 出门问问发布“组织操作系统”CodeBanana，以《超级组织》为思想底座
+  - tags: ['出门问问发布', '组织操作系统', 'CodeBanana', '超级组织', '为思想底座']
+  - platform: none
+  - topics: [general]
+
+- 美团闪购与格力电器签约合作 升级空调“半日拆送装”服务
+  - tags: ['美团闪购与格力电器签约合作', '升级空调', '半日拆送装', '服务']
+  - platform: none
+  - topics: [general]
+
+- 支付宝AI付上线新能力 支持“龙虾”类智能体
+  - tags: ['支付宝', 'AI', '付上线新能力', '支持', '龙虾', '类智能体']
+  - platform: none
+  - topics: [general]
+
+- 抖音生活服务携手中国供销新合作超市推出惠民直播
+  - tags: ['抖音生活服务携手中国供销新合作超市推出惠民直播']
+  - platform: 抖音
+  - topics: [general]
+
+- 滴滴快送2025年订单规模同比增长231.1%
+  - tags: ['滴滴快送', '年订单规模同比增长']
+  - platform: none
+  - topics: [general]
+
+- 官宣！追觅硅谷发布会定档，4月27日-30日登陆北美
+  - tags: ['官宣', '追觅硅谷发布会定档', '日登陆北美']
+  - platform: none
+  - topics: [general]
+
+- DHL将在波兰新建货运航站楼 2029年正式投用
+  - tags: ['DHL', '将在波兰新建货运航站楼', '年正式投用']
+  - platform: none
+  - topics: [general]
+
+- 启用全球宠物创新研发中心，网易严选升级全链路科学养宠方案
+  - tags: ['启用全球宠物创新研发中心', '网易严选升级全链路科学养宠方案']
+  - platform: none
+  - topics: [general]
+
+- 京东股权曝光，刘强东大权在握
+  - tags: ['京东股权曝光', '刘强东大权在握']
+  - platform: 京东
+  - topics: [general]
+
+- 国家邮政局：一季度快递业务量累计完成477.3亿件
+  - tags: ['国家邮政局', '一季度快递业务量累计完成', '亿件']
+  - platform: none
+  - topics: [general]
+
+- 库克亮相苹果员工大会：身体健康，将长期担任执行董事长
+  - tags: ['库克亮相苹果员工大会', '身体健康', '将长期担任执行董事长']
+  - platform: none
+  - topics: [组织人事]
+
+- 美团猛砸120万换战袍，太拉风了
+  - tags: ['美团猛砸', '万换战袍', '太拉风了']
+  - platform: none
+  - topics: [general]
+
+- 京东17.57亿元摘得北京亦庄商业地
+  - tags: ['京东', '亿元摘得北京亦庄商业地']
+  - platform: 京东
+  - topics: [general]
+
+- 突发，捞女网红鱼鱼被全网封杀，内幕毁三观
+  - tags: ['突发', '捞女网红鱼鱼被全网封杀', '内幕毁三观']
+  - platform: none
+  - topics: [general]
+
+- 中汽新能源发布新能源汽车电安全解决方案（NESS） 助力新能源汽车高质量发展
+  - tags: ['中汽新能源发布新能源汽车电安全解决方案', 'NESS', '助力新能源汽车高质量发展']
+  - platform: none
+  - topics: [general]
+
+- 同行们都该谢谢爱奇艺交的学费
+  - tags: ['同行们都该谢谢爱奇艺交的学费']
+  - platform: none
+  - topics: [general]
+
+- 不爱“茅台”，年轻人需要的是属于自己的“老村长”
+  - tags: ['不爱', '茅台', '年轻人需要的是属于自己的', '老村长']
+  - platform: none
+  - topics: [general]
+
+- 本地生活战场，抖音的第二次进攻
+  - tags: ['本地生活战场', '抖音的第二次进攻']
+  - platform: 抖音
+  - topics: [general]
+
+- 字节迫近Meta，但Reels也追上了TikTok
+  - tags: ['字节迫近', 'Meta', 'Reels', '也追上了', 'TikTok']
+  - platform: 抖音
+  - topics: [general]
+
+- 飞鹤，困在“人海战术”里
+  - tags: ['飞鹤', '困在', '人海战术']
+  - platform: none
+  - topics: [general]
+
+- 投资人不看机器人马拉松?
+  - tags: ['投资人不看机器人马拉松']
+  - platform: none
+  - topics: [general]
+
+- 惠普重磅发布新一代优系列与慧系列激光打印机
+  - tags: ['惠普重磅发布新一代优系列与慧系列激光打印机']
+  - platform: none
+  - topics: [general]
+
+- 58同城现维修“幽灵订单”：平台强行截胡上门服务，警方已立案
+  - tags: ['同城现维修', '幽灵订单', '平台强行截胡上门服务', '警方已立案']
+  - platform: none
+  - topics: [general]
+
+- 福恩股份深交所上市：市值71亿 预计第一季营收3.8亿
+  - tags: ['福恩股份深交所上市', '市值', '预计第一季营收']
+  - platform: none
+  - topics: [general]
+
+- 盛合晶微科创板上市：募资50亿，市值1428亿
+  - tags: ['盛合晶微科创板上市', '募资', '市值']
+  - platform: none
+  - topics: [general]
+
+- REDMI K90 Max 发布；2026 款乐道 L90 上市；微信支付接入五国国家码｜Do早报
+  - tags: ['REDMI K', 'Max', '发布', '款乐道', '上市', '微信支付接入五国国家码']
+  - platform: 小红书
+  - topics: [general]
+
+- 大众汽车集团大变革年代开幕：四款车型全球首秀，全域智能体AI落地
+  - tags: ['大众汽车集团大变革年代开幕', '四款车型全球首秀', '全域智能体', 'AI', '落地']
+  - platform: none
+  - topics: [general]
+
+- 中国联通2026Q1净利润 49 亿元，同比下降 17.6%
+  - tags: ['中国联通', '净利润', '亿元', '同比下降']
+  - platform: none
+  - topics: [general]
+
+- 胜宏科技港股上市：募资201亿港元
+  - tags: ['胜宏科技港股上市', '募资', '亿港元']
+  - platform: none
+  - topics: [general]
+
+- 2026款乐道L90搭载蔚来智能科技全家桶，售价26.58万元起
+  - tags: ['款乐道', '搭载蔚来智能科技全家桶', '售价', '万元起']
+  - platform: none
+  - topics: [general]
+
+- 大众汽车全球首发三款车型，加速推进在华史无前例的新能源车型攻势
+  - tags: ['大众汽车全球首发三款车型', '加速推进在华史无前例的新能源车型攻势']
+  - platform: none
+  - topics: [general]
+
+- 大疆发布迷你无线麦克风DJI Mic Mini 2，售价329元起
+  - tags: ['大疆发布迷你无线麦克风', 'DJI Mic Mini', '售价', '元起']
+  - platform: none
+  - topics: [general]
+
+- 大疆发布Osmo Mobile 8P手持稳定器：售价899元
+  - tags: ['大疆发布', 'Osmo Mobile', '手持稳定器', '售价']
+  - platform: none
+  - topics: [general]
+
+- ID. AURA T6迎来全球首秀，开启一汽-大众智电2.0新时代
+  - tags: ['ID', 'AURA T', '迎来全球首秀', '开启一汽', '大众智电', '新时代']
+  - platform: none
+  - topics: [general]
+
+---
+
 ## 2026-04-21
 
 - 劳尼克斯完成新一轮融资 加码高端锂电园林工具研发与海外拓展
