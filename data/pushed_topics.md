@@ -1,3 +1,322 @@
+## 2026-04-23
+
+- 无锡2家超盒算NB即将开业
+  - tags: ['无锡', '家超盒算', 'NB', '即将开业']
+  - platform: none
+  - topics: [general]
+
+- Lululemon任命海蒂?奥尼尔为新任CEO
+  - tags: ['Lululemon', '任命海蒂', '奥尼尔为新任', 'CEO']
+  - platform: none
+  - topics: [组织人事]
+
+- 全球首条跨国跨境索道即将试运行 中俄双边贸易迎重大交通利好
+  - tags: ['全球首条跨国跨境索道即将试运行', '中俄双边贸易迎重大交通利好']
+  - platform: none
+  - topics: [跨境电商]
+
+- 美国海关启动IEEPA关税退款计划 企业最高可获1660亿美元退款
+  - tags: ['美国海关启动', 'IEEPA', '关税退款计划', '企业最高可获', '亿美元退款']
+  - platform: none
+  - topics: [电商财税]
+
+- 日本乐天启动“千店出海计划” 助力中国卖家进军日本市场
+  - tags: ['日本乐天启动', '千店出海计划', '助力中国卖家进军日本市场']
+  - platform: none
+  - topics: [跨境电商]
+
+- 亚马逊宠物日大促定档5月11-15日 首次延长至5天 向全品类开放
+  - tags: ['亚马逊宠物日大促定档', '首次延长至', '向全品类开放']
+  - platform: none
+  - topics: [跨境电商]
+
+- TikTok公布2026年第二季度广告系统升级
+  - tags: ['TikTok', '公布', '年第二季度广告系统升级']
+  - platform: 抖音
+  - topics: [general]
+
+- WiseApp Retail：中国电商在韩国市场份额大幅增长 速卖通与Temu表现突出
+  - tags: ['WiseApp Retail', '中国电商在韩国市场份额大幅增长', '速卖通与', 'Temu', '表现突出']
+  - platform: 淘系
+  - topics: [general]
+
+- 俄罗斯国家杜马一读通过数字货币法案：明确合法财产属性并限制境内支付
+  - tags: ['俄罗斯国家杜马一读通过数字货币法案', '明确合法财产属性并限制境内支付']
+  - platform: none
+  - topics: [general]
+
+- Shopee新加坡站新规：健康类目商品无“正品证明”将无法上架
+  - tags: ['Shopee', '新加坡站新规', '健康类目商品无', '正品证明', '将无法上架']
+  - platform: none
+  - topics: [跨境电商, 规则与政策]
+
+- TikTok Shop泰国站宣布上调佣金费率
+  - tags: ['TikTok Shop', '泰国站宣布上调佣金费率']
+  - platform: 抖音
+  - topics: [跨境电商]
+
+- 南非收紧进口监管 9月20日起对电商商品强制实施安全认证
+  - tags: ['南非收紧进口监管', '日起对电商商品强制实施安全认证']
+  - platform: none
+  - topics: [规则与政策]
+
+- NRF：2026年美国母亲节消费预计创380亿美元新高 人均支出达284.25美元
+  - tags: ['NRF', '年美国母亲节消费预计创', '亿美元新高', '人均支出达', '美元']
+  - platform: none
+  - topics: [消费零售]
+
+- 俄罗斯启动进口增值税无息延缴试点 最长可延至3个月
+  - tags: ['俄罗斯启动进口增值税无息延缴试点', '最长可延至', '个月']
+  - platform: none
+  - topics: [电商财税]
+
+- 低申报卖家须谨慎：美国关税退款申请风险提示
+  - tags: ['低申报卖家须谨慎', '美国关税退款申请风险提示']
+  - platform: none
+  - topics: [电商财税]
+
+- 巴基斯坦对中国多类钢铁产品加征反倾销税 税率最高达40.47%
+  - tags: ['巴基斯坦对中国多类钢铁产品加征反倾销税', '税率最高达']
+  - platform: none
+  - topics: [电商财税]
+
+- 跨境电商新财税政策落地：历史账目按2%起征 2026年起全面查账征收
+  - tags: ['跨境电商新财税政策落地', '历史账目按', '起征', '年起全面查账征收']
+  - platform: none
+  - topics: [跨境电商, 电商财税, 规则与政策]
+
+- UPS战略性加码美国退货市场 计划新增1700个退货点
+  - tags: ['UPS', '战略性加码美国退货市场', '计划新增', '个退货点']
+  - platform: none
+  - topics: [general]
+
+- 马来西亚部长呼吁民众谨慎使用BNPL购必需品 鼓励支持本地产品
+  - tags: ['马来西亚部长呼吁民众谨慎使用', 'BNPL', '购必需品', '鼓励支持本地产品']
+  - platform: none
+  - topics: [general]
+
+- Zigzag收购Shipup 打造发货、退货、售后一体化解决方案
+  - tags: ['Zigzag', '收购', 'Shipup', '打造发货', '退货', '售后一体化解决方案']
+  - platform: none
+  - topics: [general]
+
+- 炫富网红蓝战非不装了，疯狂带货捞金
+  - tags: ['炫富网红蓝战非不装了', '疯狂带货捞金']
+  - platform: none
+  - topics: [general]
+
+- 阿里来势汹汹，给抖音沉重一击
+  - tags: ['阿里来势汹汹', '给抖音沉重一击']
+  - platform: 淘系
+  - topics: [general]
+
+- 央视曝光！哪吒汽车暴亏183亿，巨额国资难追回
+  - tags: ['央视曝光', '哪吒汽车暴亏', '巨额国资难追回']
+  - platform: none
+  - topics: [general]
+
+- 抖音豆包拿下断层第一，让人刮目相看
+  - tags: ['抖音豆包拿下断层第一', '让人刮目相看']
+  - platform: 抖音
+  - topics: [general]
+
+- 曹德旺放出狠话：大不了关掉美国工厂
+  - tags: ['曹德旺放出狠话', '大不了关掉美国工厂']
+  - platform: none
+  - topics: [general]
+
+- 快手电商618大促将于5月上旬启动
+  - tags: ['快手电商', '大促将于', '月上旬启动']
+  - platform: 快手
+  - topics: [general]
+
+- 京东17.57亿元摘得北京亦庄商业地
+  - tags: ['京东', '亿元摘得北京亦庄商业地']
+  - platform: 京东
+  - topics: [general]
+
+- 红杉物流以750万美元将资产出售给美客多 退出电商物流领域
+  - tags: ['红杉物流以', '万美元将资产出售给美客多', '退出电商物流领域']
+  - platform: none
+  - topics: [general]
+
+- 小红书电商：2025年图书零售业总成交额增长超30%
+  - tags: ['小红书电商', '年图书零售业总成交额增长超']
+  - platform: 小红书
+  - topics: [消费零售]
+
+- 顺丰苏南与极速跃迁达成“AI机器人+智慧物流”合作
+  - tags: ['顺丰苏南与极速跃迁达成', 'AI', '机器人', '智慧物流', '合作']
+  - platform: none
+  - topics: [general]
+
+- 贾跃亭发财了，到账230亿
+  - tags: ['贾跃亭发财了', '到账']
+  - platform: none
+  - topics: [general]
+
+- 央视曝光哪吒汽车烂尾内幕，多地国资被卷走
+  - tags: ['央视曝光哪吒汽车烂尾内幕', '多地国资被卷走']
+  - platform: none
+  - topics: [general]
+
+- 乔布斯接班人卸任，一个时代结束了
+  - tags: ['乔布斯接班人卸任', '一个时代结束了']
+  - platform: none
+  - topics: [组织人事]
+
+- 千问对外开放“AI办事”能力 首家接入东方航空
+  - tags: ['千问对外开放', 'AI', '办事', '能力', '首家接入东方航空']
+  - platform: none
+  - topics: [general]
+
+- 同程旅行：春季马拉松带动举办地搜索量涨超240%
+  - tags: ['同程旅行', '春季马拉松带动举办地搜索量涨超']
+  - platform: none
+  - topics: [general]
+
+- 圆通2025年营收752.77亿元 同比增长9.05%
+  - tags: ['圆通', '年营收', '亿元', '同比增长']
+  - platform: none
+  - topics: [general]
+
+- 九州通与香港美亚达成深度合作 启动“百院营养战略”
+  - tags: ['九州通与香港美亚达成深度合作', '启动', '百院营养战略']
+  - platform: none
+  - topics: [general]
+
+- 好电视的新答案！海信小墨E5S系列正式发布
+  - tags: ['好电视的新答案', '海信小墨', '系列正式发布']
+  - platform: none
+  - topics: [general]
+
+- 淘宝闪购联合杭州市民政局推出“惠老送”服务品牌
+  - tags: ['淘宝闪购联合杭州市民政局推出', '惠老送', '服务品牌']
+  - platform: 淘系
+  - topics: [消费零售]
+
+- T3出行向港交所提交上市申请
+  - tags: ['出行向港交所提交上市申请']
+  - platform: none
+  - topics: [general]
+
+- 亚马逊：2025年在华配合执法行动超70次
+  - tags: ['亚马逊', '年在华配合执法行动超']
+  - platform: none
+  - topics: [跨境电商]
+
+- 阿里彻底急了，向抖音豆包开炮
+  - tags: ['阿里彻底急了', '向抖音豆包开炮']
+  - platform: 淘系
+  - topics: [general]
+
+- 东南亚电商迈入万亿时代，印尼份额稳居第一
+  - tags: ['东南亚电商迈入万亿时代', '印尼份额稳居第一']
+  - platform: none
+  - topics: [general]
+
+- 抖音发布关于AI生成不当内容及侵犯他人权益的治理公告
+  - tags: ['抖音发布关于', 'AI', '生成不当内容及侵犯他人权益的治理公告']
+  - platform: 抖音
+  - topics: [general]
+
+- 字节跳动发布 3D 生成大模型 Seed3D 2.0
+  - tags: ['字节跳动发布', '生成大模型', 'Seed']
+  - platform: 抖音
+  - topics: [general]
+
+- 小鹏 GX 隐藏高定色明日北京车展首发，预售 39.98 万元起
+  - tags: ['小鹏', 'GX', '隐藏高定色明日北京车展首发', '预售', '万元起']
+  - platform: none
+  - topics: [general]
+
+- 普渡机器人完成近10亿元融资，估值突破100亿元
+  - tags: ['普渡机器人完成近', '亿元融资', '估值突破', '亿元']
+  - platform: none
+  - topics: [general]
+
+- 追觅星空计划携手UCB伯克利，深化AI汽车创新合作
+  - tags: ['追觅星空计划携手', 'UCB', '伯克利', '深化', 'AI', '汽车创新合作']
+  - platform: none
+  - topics: [general]
+
+- 杜比携手宝马将杜比全景声引入全新BMW 7系， 沉浸式音频体验将拓展至未来更多车型
+  - tags: ['杜比携手宝马将杜比全景声引入全新', 'BMW', '沉浸式音频体验将拓展至未来更多车型']
+  - platform: none
+  - topics: [general]
+
+- 制售米哈游《原神》人物盗版手办，3被告获刑
+  - tags: ['制售米哈游', '原神', '人物盗版手办', '被告获刑']
+  - platform: none
+  - topics: [general]
+
+- SpaceX 拟 600 亿美元买下 AI 编程工具 Cursor
+  - tags: ['SpaceX', '亿美元买下', 'AI', '编程工具', 'Cursor']
+  - platform: none
+  - topics: [general]
+
+- 阶跃和千⾥科技达成战略合作：共同打造原⽣智驾基座模型
+  - tags: ['阶跃和千', '科技达成战略合作', '共同打造原', '智驾基座模型']
+  - platform: none
+  - topics: [general]
+
+- 即梦涨价：一场被误读的「傲慢」
+  - tags: ['即梦涨价', '一场被误读的', '傲慢']
+  - platform: none
+  - topics: [general]
+
+- 养猪血亏，上市猪企靠什么续命？
+  - tags: ['养猪血亏', '上市猪企靠什么续命']
+  - platform: none
+  - topics: [general]
+
+- 灯塔专业版演出2.0重磅上线 六大独家模块构建全链路数据服务
+  - tags: ['灯塔专业版演出', '重磅上线', '六大独家模块构建全链路数据服务']
+  - platform: none
+  - topics: [general]
+
+- 中年人疯抢大车，又难开又难停却为什么这么火？
+  - tags: ['中年人疯抢大车', '又难开又难停却为什么这么火']
+  - platform: none
+  - topics: [general]
+
+- 2026年一季度智能门锁市场总结：结构性机会开启行业新周期
+  - tags: ['年一季度智能门锁市场总结', '结构性机会开启行业新周期']
+  - platform: none
+  - topics: [general]
+
+- 爱奇艺带长视频再次“冒险”
+  - tags: ['爱奇艺带长视频再次', '冒险']
+  - platform: none
+  - topics: [general]
+
+- 长安朱华荣，来到“李书福时刻”
+  - tags: ['长安朱华荣', '来到', '李书福时刻']
+  - platform: none
+  - topics: [general]
+
+- 制造业龙头造车记，一场雅迪与飞书的双向奔赴
+  - tags: ['制造业龙头造车记', '一场雅迪与飞书的双向奔赴']
+  - platform: none
+  - topics: [general]
+
+- 云鲸张峻彬，得像昌敬和俞浩一样去折腾
+  - tags: ['云鲸张峻彬', '得像昌敬和俞浩一样去折腾']
+  - platform: none
+  - topics: [general]
+
+- DeepSeek需要重走来时路
+  - tags: ['DeepSeek', '需要重走来时路']
+  - platform: none
+  - topics: [general]
+
+- 天天拍车热卖榜：新能源二手车交易升温，竞拍直卖帮车主锁定更多溢价空间
+  - tags: ['天天拍车热卖榜', '新能源二手车交易升温', '竞拍直卖帮车主锁定更多溢价空间']
+  - platform: none
+  - topics: [general]
+
+---
+
 ## 2026-04-22
 
 - 阿里发布数字人“千问小酒窝” 给大模型安了一张甜妹脸
