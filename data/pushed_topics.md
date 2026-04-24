@@ -1,3 +1,207 @@
+## 2026-04-24
+
+- 抖音电商618将于5月15日开启抢先购
+  - tags: ['抖音电商', '将于', '日开启抢先购']
+  - platform: 抖音
+  - topics: [general]
+
+- 途牛五一消费趋势：自驾游预订出游人次同比增长超30%
+  - tags: ['途牛五一消费趋势', '自驾游预订出游人次同比增长超']
+  - platform: none
+  - topics: [消费零售]
+
+- 抖音上线AI创作独立入口
+  - tags: ['抖音上线', 'AI', '创作独立入口']
+  - platform: 抖音
+  - topics: [general]
+
+- 京东发布全域通千亿计划：打造至少1000款年销过亿新品
+  - tags: ['京东发布全域通千亿计划', '打造至少', '款年销过亿新品']
+  - platform: 京东
+  - topics: [general]
+
+- 5月12日起实施 Shopee泰国本土店将上线“劣质产品评级”机制
+  - tags: ['日起实施', 'Shopee', '泰国本土店将上线', '劣质产品评级', '机制']
+  - platform: none
+  - topics: [跨境电商]
+
+- Lindt瑞士莲中国首店4月25日上海开业
+  - tags: ['Lindt', '瑞士莲中国首店', '日上海开业']
+  - platform: none
+  - topics: [general]
+
+- 物美超市：物美AI零售将于4月底入驻燕郊、天津四家永旺
+  - tags: ['物美超市', '物美', 'AI', '零售将于', '月底入驻燕郊', '天津四家永旺']
+  - platform: none
+  - topics: [消费零售]
+
+- eBay Qoo10启动新一轮品牌扶持计划 月销售额提升7倍
+  - tags: ['eBay Qoo', '启动新一轮品牌扶持计划', '月销售额提升']
+  - platform: none
+  - topics: [消费零售]
+
+- 8月12日欧盟包装法PPWR生效 亚马逊卖家速查EPR注册 违者面临停售
+  - tags: ['日欧盟包装法', 'PPWR', '生效', '亚马逊卖家速查', 'EPR', '注册']
+  - platform: none
+  - topics: [跨境电商]
+
+- 美客多以750万美元收购红杉物流部分资产 强化物流自建能力
+  - tags: ['美客多以', '万美元收购红杉物流部分资产', '强化物流自建能力']
+  - platform: none
+  - topics: [general]
+
+- Wildberries推出AI美妆试妆功能 支持口红唇彩虚拟试妆
+  - tags: ['Wildberries', '推出', 'AI', '美妆试妆功能', '支持口红唇彩虚拟试妆']
+  - platform: none
+  - topics: [general]
+
+- 商务部：美方退税举措被视为纠正错误的重要进展
+  - tags: ['商务部', '美方退税举措被视为纠正错误的重要进展']
+  - platform: none
+  - topics: [规则与政策]
+
+- 黄埔海关：东莞一季度进出口货值创新高 稳居全国第五
+  - tags: ['黄埔海关', '东莞一季度进出口货值创新高', '稳居全国第五']
+  - platform: none
+  - topics: [general]
+
+- 亚马逊AI视频广告生成工具“Video Generator”正式登陆澳大利亚
+  - tags: ['亚马逊', 'AI', '视频广告生成工具', 'Video Generator', '正式登陆澳大利亚']
+  - platform: none
+  - topics: [跨境电商]
+
+- 俄罗斯监管收紧 电商与线下价差或缩至5%-10%
+  - tags: ['俄罗斯监管收紧', '电商与线下价差或缩至']
+  - platform: none
+  - topics: [规则与政策]
+
+- 印尼一季度经济增速超5.5% 内需与投资双轮驱动
+  - tags: ['印尼一季度经济增速超', '内需与投资双轮驱动']
+  - platform: none
+  - topics: [general]
+
+- Yandex Market更新卖家后台 优化卖家体验
+  - tags: ['Yandex Market', '更新卖家后台', '优化卖家体验']
+  - platform: none
+  - topics: [组织人事]
+
+- 越南总理设定数字经济目标：电商增速超23% 数字经济占GDP30%
+  - tags: ['越南总理设定数字经济目标', '电商增速超', '数字经济占', 'GDP']
+  - platform: none
+  - topics: [general]
+
+- 雀巢集团确认将蓝瓶咖啡出售给大钲资本
+  - tags: ['雀巢集团确认将蓝瓶咖啡出售给大钲资本']
+  - platform: none
+  - topics: [general]
+
+- 海底捞旗下焰请烤肉·大排档全国首店开启试营业
+  - tags: ['海底捞旗下焰请烤肉', '大排档全国首店开启试营业']
+  - platform: none
+  - topics: [general]
+
+- 广汽传祺越7亮相2026北京车展：首款全场景智享硬核SUV全球首发，重新定义“新越野”
+  - tags: ['广汽传祺越', '亮相', '北京车展', '首款全场景智享硬核', 'SUV', '全球首发']
+  - platform: none
+  - topics: [general]
+
+- 泡泡玛特为什么拒绝AI？
+  - tags: ['泡泡玛特为什么拒绝', 'AI']
+  - platform: none
+  - topics: [general]
+
+- 腾势Z北京车展全球首秀 树立全球智能电动超跑新标杆
+  - tags: ['腾势', '北京车展全球首秀', '树立全球智能电动超跑新标杆']
+  - platform: none
+  - topics: [general]
+
+- 治愈捉宠小世界！《闪耀吧！噜咪》二测定档
+  - tags: ['治愈捉宠小世界', '闪耀吧', '噜咪', '二测定档']
+  - platform: none
+  - topics: [general]
+
+- 满配运动轿跑登场，零跑Lafa5 Ultra北京国际车展重磅上市
+  - tags: ['满配运动轿跑登场', '零跑', 'Lafa', 'Ultra', '北京国际车展重磅上市']
+  - platform: none
+  - topics: [general]
+
+- 从经典到未来 梅赛德斯-奔驰携40款时代力作与前瞻科技登陆北京车展
+  - tags: ['从经典到未来', '梅赛德斯', '奔驰携', '款时代力作与前瞻科技登陆北京车展']
+  - platform: none
+  - topics: [general]
+
+- DoNews汽车直击2026北京车展——东风标致&雪铁龙概念车
+  - tags: ['DoNews', '汽车直击', '北京车展', '东风标致', '雪铁龙概念车']
+  - platform: none
+  - topics: [general]
+
+- 长安汽车亮相2026北京车展：发布“海纳百川计划2.0”与两大全球核心技术，双HEV新车
+  - tags: ['长安汽车亮相', '北京车展', '发布', '海纳百川计划', '与两大全球核心技术', 'HEV']
+  - platform: none
+  - topics: [general]
+
+- 零跑Lafa5 Ultra北京车展上市，百家外媒到场聚焦零跑全球化进程
+  - tags: ['零跑', 'Lafa', 'Ultra', '北京车展上市', '百家外媒到场聚焦零跑全球化进程']
+  - platform: none
+  - topics: [general]
+
+- DeepSeek-V4 预览版正式发布：迈入百万上下文普惠时代
+  - tags: ['DeepSeek', '预览版正式发布', '迈入百万上下文普惠时代']
+  - platform: none
+  - topics: [general]
+
+- 焕新极氪009北京车展开启预售：全面升级定义豪华MPV标杆
+  - tags: ['焕新极氪', '北京车展开启预售', '全面升级定义豪华', 'MPV', '标杆']
+  - platform: none
+  - topics: [general]
+
+- 2026北京车展，“25万级旗舰大满配”就看智己LS8！
+  - tags: ['北京车展', '万级旗舰大满配', '就看智己', 'LS']
+  - platform: none
+  - topics: [general]
+
+- 油耗降一半，标配即满配——长安蓝鲸超擎混动双车北京车展全球首发
+  - tags: ['油耗降一半', '标配即满配', '长安蓝鲸超擎混动双车北京车展全球首发']
+  - platform: none
+  - topics: [general]
+
+- 5位创始人亲述：烧烤品牌靠什么守住自己的“一亩三分地”？
+  - tags: ['位创始人亲述', '烧烤品牌靠什么守住自己的', '一亩三分地']
+  - platform: none
+  - topics: [消费零售]
+
+- “鱼小铺”服务费上涨，卖家批量“逃离” 闲鱼？
+  - tags: ['鱼小铺', '服务费上涨', '卖家批量', '逃离', '闲鱼']
+  - platform: 淘系
+  - topics: [general]
+
+- AI短剧的“脸面”，谁来做主？
+  - tags: ['AI', '短剧的', '脸面', '谁来做主']
+  - platform: none
+  - topics: [general]
+
+- 字节跳动：一场利润的“假摔”
+  - tags: ['字节跳动', '一场利润的', '假摔']
+  - platform: 抖音
+  - topics: [general]
+
+- 640亿美元收购环球音乐，是豪赌还是抄底？
+  - tags: ['亿美元收购环球音乐', '是豪赌还是抄底']
+  - platform: none
+  - topics: [general]
+
+- 周易带领下的华泰证券：豪赌AI第二曲线，能否穿越“中年危机”？
+  - tags: ['周易带领下的华泰证券', '豪赌', 'AI', '第二曲线', '能否穿越', '中年危机']
+  - platform: none
+  - topics: [general]
+
+- 广交会见证：中国智造的全球化突围
+  - tags: ['广交会见证', '中国智造的全球化突围']
+  - platform: none
+  - topics: [general]
+
+---
+
 ## 2026-04-23
 
 - 无锡2家超盒算NB即将开业
