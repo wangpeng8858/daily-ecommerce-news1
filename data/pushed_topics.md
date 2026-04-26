@@ -1,3 +1,127 @@
+## 2026-04-26
+
+- 途牛五一消费趋势：自驾游预订出游人次同比增长超30%
+  - tags: ['途牛五一消费趋势', '自驾游预订出游人次同比增长超']
+  - platform: none
+  - topics: [消费零售]
+
+- 商务部：美方退税举措被视为纠正错误的重要进展
+  - tags: ['商务部', '美方退税举措被视为纠正错误的重要进展']
+  - platform: none
+  - topics: [规则与政策]
+
+- 俄罗斯监管收紧 电商与线下价差或缩至5%-10%
+  - tags: ['俄罗斯监管收紧', '电商与线下价差或缩至']
+  - platform: none
+  - topics: [规则与政策]
+
+- 印尼一季度经济增速超5.5% 内需与投资双轮驱动
+  - tags: ['印尼一季度经济增速超', '内需与投资双轮驱动']
+  - platform: none
+  - topics: [general]
+
+- 直面GPT5.5、被曝首轮融资，梁文峰开始打硬仗
+  - tags: ['直面', 'GPT', '被曝首轮融资', '梁文峰开始打硬仗']
+  - platform: none
+  - topics: [general]
+
+- AI 巨头，走入黑暗森林
+  - tags: ['AI', '巨头', '走入黑暗森林']
+  - platform: none
+  - topics: [general]
+
+- 跨越“高精地图税”与“数据孤岛”：解码佑驾创新无人车的规模化演进
+  - tags: ['跨越', '高精地图税', '数据孤岛', '解码佑驾创新无人车的规模化演进']
+  - platform: none
+  - topics: [general]
+
+- 中国酸味版图，正在被一锅海南酸重新划分
+  - tags: ['中国酸味版图', '正在被一锅海南酸重新划分']
+  - platform: none
+  - topics: [general]
+
+- 这一次，梁文锋和杨植麟隔空握手
+  - tags: ['这一次', '梁文锋和杨植麟隔空握手']
+  - platform: none
+  - topics: [general]
+
+- 旗舰手机卖断货，高端市场OPPO与苹果、三星“三足鼎立”
+  - tags: ['旗舰手机卖断货', '高端市场', 'OPPO', '与苹果', '三星', '三足鼎立']
+  - platform: none
+  - topics: [general]
+
+- 哈啰，等待下一场蜕变
+  - tags: ['哈啰', '等待下一场蜕变']
+  - platform: none
+  - topics: [general]
+
+- 浙江富豪，245亿“豪赌”算力！
+  - tags: ['浙江富豪', '豪赌', '算力']
+  - platform: none
+  - topics: [general]
+
+- 全球CPU龙头股暴力突袭，AI逻辑新主线浮现
+  - tags: ['全球', 'CPU', '龙头股暴力突袭', 'AI', '逻辑新主线浮现']
+  - platform: none
+  - topics: [general]
+
+- AI写草稿，百度定终版
+  - tags: ['AI', '写草稿', '百度定终版']
+  - platform: none
+  - topics: [general]
+
+- 独角兽海亮科服，卡位了AI+教育最大市场
+  - tags: ['独角兽海亮科服', '卡位了', 'AI', '教育最大市场']
+  - platform: none
+  - topics: [general]
+
+- AI改造教育，海亮科服死磕“慢就是快”
+  - tags: ['AI', '改造教育', '海亮科服死磕', '慢就是快']
+  - platform: none
+  - topics: [general]
+
+- 离职潮席卷东方甄选，俞敏洪一人扛下所有
+  - tags: ['离职潮席卷东方甄选', '俞敏洪一人扛下所有']
+  - platform: none
+  - topics: [组织人事]
+
+- 最激进的“AI先锋”多邻国，已经放过员工了
+  - tags: ['最激进的', 'AI', '先锋', '多邻国', '已经放过员工了']
+  - platform: none
+  - topics: [general]
+
+- DeepSeek V4炸场背后：有人在内斗，有人在接力
+  - tags: ['DeepSeek V', '炸场背后', '有人在内斗', '有人在接力']
+  - platform: none
+  - topics: [general]
+
+- 看了腾讯的Hy3 preview，我读懂了姚顺雨
+  - tags: ['看了腾讯的', 'Hy', 'preview', '我读懂了姚顺雨']
+  - platform: none
+  - topics: [general]
+
+- 千岸科技IPO提交注册，义乌姐弟联手创业，近9成收入依赖亚马逊
+  - tags: ['千岸科技', 'IPO', '提交注册', '义乌姐弟联手创业', '成收入依赖亚马逊']
+  - platform: none
+  - topics: [跨境电商]
+
+- 去年增收不增利、腾讯与阅文减持，中文在线“有点烦”
+  - tags: ['去年增收不增利', '腾讯与阅文减持', '中文在线', '有点烦']
+  - platform: none
+  - topics: [general]
+
+- 一季度净赚200亿！“矿王”紫金矿业，继续豪赌锂矿
+  - tags: ['一季度净赚', '矿王', '紫金矿业', '继续豪赌锂矿']
+  - platform: none
+  - topics: [general]
+
+- 大单品燕京U8减速，市场北强南弱，燕京啤酒靠“省钱”能走多远？
+  - tags: ['大单品燕京', '减速', '市场北强南弱', '燕京啤酒靠', '省钱', '能走多远']
+  - platform: none
+  - topics: [general]
+
+---
+
 ## 2026-04-25
 
 - 天猫618上线官方“送装一体”服务：海信、海尔、美的等品牌率先接入
