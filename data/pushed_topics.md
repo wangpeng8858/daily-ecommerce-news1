@@ -1,3 +1,197 @@
+## 2026-04-27
+
+- 永辉超市CEO王守诚：调改已步入第二阶段
+  - tags: ['永辉超市', 'CEO', '王守诚', '调改已步入第二阶段']
+  - platform: none
+  - topics: [组织人事]
+
+- 高德地图面向导航场景推出“AI伴行”产品
+  - tags: ['高德地图面向导航场景推出', 'AI', '伴行', '产品']
+  - platform: none
+  - topics: [general]
+
+- 同程商旅：与万达酒店的系统直连已全面落地
+  - tags: ['同程商旅', '与万达酒店的系统直连已全面落地']
+  - platform: none
+  - topics: [general]
+
+- 网络金融新规出台：花呗、白条等将迎重大调整
+  - tags: ['网络金融新规出台', '花呗', '白条等将迎重大调整']
+  - platform: none
+  - topics: [规则与政策]
+
+- 神州租车：五一跨城出行订单同比上涨近3倍
+  - tags: ['神州租车', '五一跨城出行订单同比上涨近']
+  - platform: none
+  - topics: [general]
+
+- 俞敏洪回应东方甄选主播集体离职：是平台的损失
+  - tags: ['俞敏洪回应东方甄选主播集体离职', '是平台的损失']
+  - platform: none
+  - topics: [组织人事]
+
+- 星动纪元完成超2亿美元新一轮融资 顺丰集团领投
+  - tags: ['星动纪元完成超', '亿美元新一轮融资', '顺丰集团领投']
+  - platform: none
+  - topics: [general]
+
+- 京东启动AI硬件孵化计划
+  - tags: ['京东启动', 'AI', '硬件孵化计划']
+  - platform: 京东
+  - topics: [general]
+
+- 美团小象超市大部分站点已暂停自提服务
+  - tags: ['美团小象超市大部分站点已暂停自提服务']
+  - platform: none
+  - topics: [general]
+
+- 转转集团计划未来三年内IPO
+  - tags: ['转转集团计划未来三年内', 'IPO']
+  - platform: none
+  - topics: [general]
+
+- Genrtr在欧洲16国启动私域电商网络
+  - tags: ['Genrtr', '在欧洲', '国启动私域电商网络']
+  - platform: none
+  - topics: [general]
+
+- 俄电商协会提议分步上调跨境商品增值税至22%
+  - tags: ['俄电商协会提议分步上调跨境商品增值税至']
+  - platform: none
+  - topics: [跨境电商, 电商财税]
+
+- eBay广告后台迎来重要更新 视频广告扩大开放 新增数据指标及商品排除功能
+  - tags: ['eBay', '广告后台迎来重要更新', '视频广告扩大开放', '新增数据指标及商品排除功能']
+  - platform: none
+  - topics: [general]
+
+- 俄罗斯拟将消费者欺诈罚款提高至现行水平的10倍
+  - tags: ['俄罗斯拟将消费者欺诈罚款提高至现行水平的']
+  - platform: none
+  - topics: [消费零售]
+
+- 俄罗斯邮政公布2026年五一假期网点营业时间调整
+  - tags: ['俄罗斯邮政公布', '年五一假期网点营业时间调整']
+  - platform: none
+  - topics: [general]
+
+- Kupione.co波兰Q1电商报告：消费理性化 订单数增长9%但购物频率下降9%
+  - tags: ['Kupione', 'co', '波兰', '电商报告', '消费理性化', '订单数增长']
+  - platform: none
+  - topics: [消费零售]
+
+- Avito调查：九成俄罗斯消费者愿尝试新服装品牌但预算集中在5000卢布以内
+  - tags: ['Avito', '调查', '九成俄罗斯消费者愿尝试新服装品牌但预算集中在', '卢布以内']
+  - platform: none
+  - topics: [消费零售]
+
+- Etsy上调英国卖家监管运营费至0.48% 6月22日起生效
+  - tags: ['Etsy', '上调英国卖家监管运营费至', '日起生效']
+  - platform: none
+  - topics: [规则与政策]
+
+- 剑桥科技Q1净利润同比增长276%
+  - tags: ['剑桥科技', '净利润同比增长']
+  - platform: none
+  - topics: [general]
+
+- 麦德龙中国换帅：前山姆中国总裁文安德出任执行主席
+  - tags: ['麦德龙中国换帅', '前山姆中国总裁文安德出任执行主席']
+  - platform: none
+  - topics: [组织人事]
+
+- Hindustan Zinc第四季度净利润创纪录达5.5亿美元
+  - tags: ['Hindustan Zinc', '第四季度净利润创纪录达', '亿美元']
+  - platform: none
+  - topics: [general]
+
+- 赛多利斯2026年开局良好：销售收入显著增长
+  - tags: ['赛多利斯', '年开局良好', '销售收入显著增长']
+  - platform: none
+  - topics: [general]
+
+- 我们必须支持那个起诉上海迪士尼的中国年轻人
+  - tags: ['我们必须支持那个起诉上海迪士尼的中国年轻人']
+  - platform: none
+  - topics: [general]
+
+- 提前上市！这个“五一”，小龙虾店要“爆”了？
+  - tags: ['提前上市', '这个', '五一', '小龙虾店要']
+  - platform: none
+  - topics: [general]
+
+- Omdia：2025Q4，中国大陆云基础设施支出增长26%，AI与智能体成主要驱动力
+  - tags: ['Omdia', '中国大陆云基础设施支出增长', 'AI', '与智能体成主要驱动力']
+  - platform: none
+  - topics: [general]
+
+- 破解信创体验困局，联想开天走了两步棋
+  - tags: ['破解信创体验困局', '联想开天走了两步棋']
+  - platform: none
+  - topics: [general]
+
+- 别再追求大店高产出！今年干餐饮，“低保本点”是底线
+  - tags: ['别再追求大店高产出', '今年干餐饮', '低保本点', '是底线']
+  - platform: none
+  - topics: [general]
+
+- 猪肉降价了？我看了眼外卖：还是拼好饭从不骗我
+  - tags: ['猪肉降价了', '我看了眼外卖', '还是拼好饭从不骗我']
+  - platform: none
+  - topics: [general]
+
+- 一天烧掉2400多万，恒瑞医药对研发是真舍得
+  - tags: ['一天烧掉', '多万', '恒瑞医药对研发是真舍得']
+  - platform: none
+  - topics: [general]
+
+- 6万张国产卡训出万亿模型，LongCat与DeepSeek验证了什么
+  - tags: ['万张国产卡训出万亿模型', 'LongCat', 'DeepSeek', '验证了什么']
+  - platform: none
+  - topics: [general]
+
+- 15亿买下一座酒店，读懂一个千亿赛道的终局
+  - tags: ['亿买下一座酒店', '读懂一个千亿赛道的终局']
+  - platform: none
+  - topics: [general]
+
+- 拆新能源上市，华润电力终于 “减负” 了
+  - tags: ['拆新能源上市', '华润电力终于', '减负']
+  - platform: none
+  - topics: [general]
+
+- 2026长视频广告大迁徙：长剧失势，综艺称王？
+  - tags: ['长视频广告大迁徙', '长剧失势', '综艺称王']
+  - platform: none
+  - topics: [general]
+
+- 高端+中高端，1+1>2
+  - tags: ['高端', '中高端']
+  - platform: none
+  - topics: [general]
+
+- HarmonySpace 6发布7大能力全面进阶，以AI与生态之力重塑智慧出行新纪元
+  - tags: ['HarmonySpace', '发布', '大能力全面进阶', 'AI', '与生态之力重塑智慧出行新纪元']
+  - platform: none
+  - topics: [general]
+
+- 华为技术发布会C位亮相，岚图泰山Ultra树立9系旗舰新标杆
+  - tags: ['华为技术发布会', '位亮相', '岚图泰山', 'Ultra', '树立', '系旗舰新标杆']
+  - platform: none
+  - topics: [general]
+
+- 亿纬大圆柱，高端车首选 | 亿纬锂能亮相2026北京车展
+  - tags: ['亿纬大圆柱', '高端车首选', '亿纬锂能亮相', '北京车展']
+  - platform: none
+  - topics: [general]
+
+- 无界动力完成新一轮融资，天使轮累计融资超2亿美元
+  - tags: ['无界动力完成新一轮融资', '天使轮累计融资超', '亿美元']
+  - platform: none
+  - topics: [general]
+
+---
+
 ## 2026-04-26
 
 - 途牛五一消费趋势：自驾游预订出游人次同比增长超30%
